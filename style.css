@@ -2,6 +2,11 @@ html,body{
     height:100%;
 }
 body{
+    --blue-theme-color:rgba(26, 34, 46, 1);
+    --lemon-color:rgba(235, 238, 22, 1);
+
+}
+body{
     margin:auto;
     display:flex;
     flex-direction:column;
@@ -130,7 +135,7 @@ nav{
     top:0;
     right: 0;
     height: 100vh;
-    z-index: 3;
+    z-index: 4;
     transform: translateX(100%);
     transition: transform 1s;
 }
@@ -180,14 +185,21 @@ nav{
 
 /* Footer */
 
+/*variables */
+
+
+/*fin variables*/
 footer{
-    background: rgba(26, 34, 46, 1);
+    background: var(--blue-theme-color);
     margin-top: auto;
+    --footer-section-width:355px;
+    --footer-section-width-l:250px;
+    --footer-section-width-xs:180px;
 }
 .foot-title{
     color:white;
     font-weight: 800;
-    font-size:24px;
+    font-size:1.4em;
     line-height: 28px;
     margin:5px;
     text-align:center;
@@ -208,9 +220,11 @@ footer{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 25px;
+    margin-left:25px;
 }
 .foot-logo{
-    width: 355px;
+    width: var(--footer-section-width);
 }
 .foot-text{
     color:rgba(136, 140, 151, 1);
@@ -228,8 +242,7 @@ footer{
     margin-left:5px;
 }
 .footer-section{
-    margin-right: 35px;
-    max-width:355px ;
+    max-width:var(--footer-section-width) ;
 }
 .footer-section>h5{
     color:white;
@@ -309,11 +322,357 @@ p.foot-text{
     display:flex;
     font-family: Archivo;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 .copyright div{
     margin-right: 25px;
 }
 .copyright span{
     color: rgba(235, 238, 22, 1);
+}
+
+@media screen and (max-width: 1460px){
+    .footer-section{
+        max-width: var(--footer-section-width-l);
+    }
+    .foot-logo{
+        width: var(--footer-section-width-l);
+    }
+}
+@media screen and (max-width:750px) {
+    .footer-section:nth-of-type(1) {
+        order:1;
+    }
+    .footer-section:nth-of-type(4) {
+        display:none;
+    }
+}
+@media screen and (max-width:570px) {
+    .footer-section{
+        max-width: var(--footer-section-width-xs);
+    }
+    .foot-logo{
+        width: var(--footer-section-width-xs);
+    }
+    .foot-title{
+        font-size:10px ;
+    }
+    .foot-title img{
+        width: 29px;
+    }
+    .d-number{
+        font-size:20px
+    }
+    .footer-section:nth-of-type(5) {
+        order:2;
+    }
+    .footer-section>h5{
+        margin-top:15px;
+        font-size:15px;
+    }
+    .footer-group{
+        margin-top:30px;
+        margin-bottom:50px;
+    }
+    .foot-text, .footer-section ul{
+        font-size:10px;
+    }
+    .info-contact h4{
+        font-size: 11px;
+    }
+    .footer-link img{
+        width:28px;
+    }
+    .info-contact img{
+        width: 16px;
+    }
+    .info-contact p{
+        font-size:9px;
+    }
+    .send-mail{
+        width: 75%;
+    }
+    .copyright{
+        font-size:10px;
+    }
+}
+ 
+/*Banner*/
+.banner-head{
+    font-family: Montserrat;
+    font-weight: 700;
+}
+.banner{
+    background:url("images/banner.jpg") no-repeat;
+    background-size:cover ;
+    background-position: center;
+    min-height:457px ;
+    position: relative;
+    display:flex;
+}
+.devis-banner{
+    position: relative;
+    min-height:134px;
+    background : var(--blue-theme-color);
+}
+.devis-banner h4{
+    margin:0;
+    color:white;
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom:15px;
+}
+.devis-address{
+    display:flex;
+    justify-content: center;
+}
+.input-address{
+    display:inline-block;
+    margin-right: 35px;
+    width: 190px;
+    background-color: white;
+    border-radius:4px;
+    position: relative;
+}
+.input-address input{
+    height:30px;
+    border-radius:4px;
+    border:none;
+    outline:none;
+    width: 80%;
+    margin-left: 30px;
+}
+.devis-address .btn{
+    background-color:var(--lemon-color);
+    padding:0.5rem 2em;
+}
+.addr-ico{
+    width: 15px;
+    position:absolute;
+    top:5px;
+    left: 14px;
+}
+.triangle{
+    width: 35px;
+    height:35px;
+    background-color: var(--lemon-color);
+    position:absolute;
+    clip-path: polygon(0% 0%, 0 100%, 100% 100%  );
+    margin:5px;
+}
+.t-bottom{
+    left:0;
+    bottom: 0;
+}
+.t-top{
+    right: 0;
+    top:0;
+    transform: rotate(180deg) ;
+}
+.inclined-group{
+    position:absolute;
+    right:10%;
+    bottom: 0;
+    display: flex;
+}
+.inclined-bar{
+    transform: skew(-20deg, 0deg)
+}
+.bar-blue{
+    background-color:var(--blue-theme-color);
+    height:388px;
+    width: 76px;
+}
+.bar-yellow{
+    height:457px;
+    width: 152px;
+    background-color:var(--lemon-color);
+    margin-right: 13px;
+    margin-left:13px;
+}
+.bar-bottom{
+    align-self:flex-end;   
+}
+.bar-top{
+    align-self:flex-start;
+}
+.car-banner{
+    position:absolute;
+    right: 5%;
+    bottom:-20%;
+    z-index: 2;
+}
+.banner-description{
+    color:white;
+    max-width:534px;
+    margin:auto;
+    margin-left: 10%;
+    z-index:3;
+}
+.banner-title{
+    font-size: 38px;
+    margin-bottom:15px;
+}
+.banner-x-text{
+    display:flex;
+    color:var(--lemon-color);
+    font-size:10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left:10px;
+    margin-bottom:15px;
+}
+.banner-x{
+    width: 27px;
+    height:3px;
+    background-color: var(--lemon-color);
+    align-self: center;
+    margin-right: 5px;
+}
+.banner-x-2{
+    width: 50%;;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.banner-more-text{
+    background-color: var(--lemon-color);
+    border-radius: 0;
+    width: 170px;
+    display: block;
+}
+@media screen and (max-width:720px){
+    .devis-address{
+        flex-direction: column;
+        align-items: center;
+    }
+    .devis-banner{
+        padding-bottom:10px;
+    }
+    .input-address{
+        width: 90%;
+        margin-right:0;
+        margin-bottom: 15px;
+    }
+    .devis-address .btn{
+        width: 90%;
+        justify-content: center;
+    }
+    .triangle{
+        display:none;
+    }
+    .bar-yellow{
+        width: 50px;
+    }
+    .bar-blue{
+        width: 22px;
+    }
+    .inclined-group{
+        right: 17%;
+    }
+    .banner-description{
+        max-width: 250px;
+        margin-top:18%;
+    }
+    .banner-title{
+        font-size:1.1em;
+    }
+    .banner-x-text{
+        font-size:0.4em;
+    }
+    .banner-x-2{
+        font-size:0.5em;
+        width: 100%;
+    }
+    .banner-more-text{
+        border-radius:4px;
+    }
+    .car-banner{
+        right:0%;
+        bottom:-20%;
+    }
+}
+/*fin banner*/
+
+/* list technologies*/
+.service-list{
+    font-family: Inter;
+    font-weight: 600;
+    
+    margin:70px auto;
+    max-width: 1440px;
+    
+}
+.service-list h4{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.service-list-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service-list-item{
+    display: flex;
+    max-width: 370px;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: 400;
+}
+.service-list-item p{
+    text-align:center;
+}
+.service-list-item img{
+    width: 148px;
+    align-self: center;
+}
+.some-image{
+    display:flex;
+    flex-direction: column;
+    margin: 0 10px;
+    --width-some-image:271px;
+    --width-some-image-xs:185px;
+    width: var(--width-some-image);
+    font-family: Roboto;
+}
+.some-image-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin:auto;
+}
+.image-item{
+    width: var(--width-some-image);
+}
+.some-image h5{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin:0;
+    margin-top:10px;
+    text-align: center;
+}
+.image-text p{
+    font-size:11px;
+    text-align: center;
+}
+
+@media screen and (max-width:795px){
+    .service-list{
+        margin: 35px 15px;
+    }
+    .service-list h4{
+        font-size: 20px;
+    }
+    .service-list-item{
+        width:140px ;
+        font-size: 9px;
+    }
+    .some-image{
+        width: var(--width-some-image-xs);
+    }
+    .image-item{
+        width: var(--width-some-image-xs);
+    }
 }
