@@ -51,6 +51,10 @@
         </div>
     </header>
     <div class="main">
+        <p class="form-car-title">
+            Besoin de déplacer votre véhicule ?
+            Remplissez notre formulaire de commande ici !
+        </p>
       <div class="form-car-mission">
         <div class="form-field-car">
             <div class="title-logo">
@@ -60,26 +64,191 @@
                     Remplissez notre formulaire de commande ici !
                 </p>
             </div>
-            <div class="form-progress-element active">
-                <div class="circle"></div> <div class="circle-select"></div> <p>Adresse de départ</p> 
+            <div class="form-progress-group">
+                <div class="form-progress-element active">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>Adresse de départ</p> 
+                </div>
+                <div class="form-progress-element">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>Adresse de livraison</p> 
+                </div>
+                <div class="form-progress-element">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>Informations du véhicule</p> 
+                </div>
+                <div class="form-progress-element">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>Plage horaire du véhicule</p> 
+                </div>
+                <div class="form-progress-element">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>Informations donneur d'ordre</p> 
+                </div>
+                <div class="form-progress-element border-none">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>Effectuer le paiement</p> 
+                </div>
             </div>
-            <div class="form-progress-element">
-                <div class="circle"></div> <div class="circle-select"></div> <p>Adresse de livraison</p> 
+            <div class="form-prog-finalize">
+                <h4>Demande  de  convoyage N*120</h4>
+                <p>59€</p>
+                <p>Mission , 1200</p>
+                <h5>Nos Prestation De Convoyage Inclus</h5>
+                <ul>
+                    <li>Carburant</li>
+                    <li>Transport</li>
+                    <li>Péage,</li>
+                    <li>Lavage</li>
+                    <li>W garage</li>
+                </ul>
             </div>
-            <div class="form-progress-element">
-                <div class="circle"></div> <div class="circle-select"></div> <p>Informations du véhicule</p> 
-            </div>
-            <div class="form-progress-element">
-                <div class="circle"></div> <div class="circle-select"></div> <p>Plage horaire du véhicule</p> 
-            </div>
-            <div class="form-progress-element">
-                <div class="circle"></div> <div class="circle-select"></div> <p>Informations donneur d'ordre</p> 
-            </div>
-            <div class="form-progress-element border-none">
-                <div class="circle"></div> <div class="circle-select"></div> <p>Effectuer le paiement</p> 
-            </div>
+  
             <div class="logo-form"><img src="images/logo.png" alt="" class="logo"></div>
         </div>
+        <form action="" class="form-transport">
+            <fieldset class="">
+                <h4>Adresse de départ</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">Adresse de départ *</label>
+                        <input type="text" placeholder="Adresse de départ *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nom du client de départ *</label>
+                        <input type="text" placeholder="Nom du client de départ *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Type de lieu de départ *</label>
+                        <input type="text" placeholder="Type de lieu de départ *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numéro de téléphone *</label>
+                        <input type="text" placeholder="Numéro de téléphone *">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">E-mail client départ *</label>
+                        <input type="text" placeholder="E-mail client départ *">
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>Plage horaire du véhicule</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">E-mail doneur d'ordre *</label>
+                        <input type="text" placeholder="E-mail doneur d'ordre *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numéro de téléphone*</label>
+                        <input type="text" placeholder="Numéro de téléphone*">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Nom societé donneur d'ordre *</label>
+                        <textarea name="" id="" placeholder="Nom societé donneur d'ordre *"></textarea>
+                    </div>
+                    
+                    <div class="form-group w-full">
+                        <label for="">Instruction du client *</label>
+                        <textarea name="" id="" placeholder="Instruction du client *"></textarea>    
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="form-offer-finalize d-none">
+                <h4>Sélectionner votre prestation supplémentaires</h4>
+                <div class="m-35">
+                    <div class="form-group-line">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Remise carburant au meme niveau que le depart: +20€ </label>
+                    </div>
+                    <div class="form-group-line">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Livraison avec le plein de carburant: +50€ </label>
+                    </div>
+                    <div class="form-group-line">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Livraison avec le plein de lave glace: +10€ </label>
+                    </div>
+                    <div class="form-group-line">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Demonstration du véhicule:+20€ </label>
+                    </div>
+                    <div class="form-group-line">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Lavage auto: OFFERT </label>
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="form-offer-finalize pay-form d-none">
+                <div class="card-logo-list">
+                    <img src="images/mastercard.png" alt="">
+                    <img src="images/gpay.png" alt="">
+                    <img src="images/paypal.png" alt="">
+                    <img src="images/apay.png" alt="">
+                    <img src="images/stripe.png" alt="">
+                    <img src="images/bcoin.png" alt="">
+                </div>
+                <h4>Vos informations</h4>
+                <div class="payment-details">
+                    <div class="form-group w-full">
+                    <input type="text" placeholder="Email:">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Information de la carte</label>
+                        <div class="cb-num">
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                            <div class="logo-cb">
+                                <img src="images/visa.png" alt="">
+                                <img src="images/master-xs.png" alt="">
+                                <img src="images/discover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="cb-date-cvc">
+                            <input type="text" placeholder="MM/AA:">
+                            <input type="text" placeholder="CVC:">
+                        </div>
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Nom du titulaire de la carte</label>
+                        <input type="text" placeholder="Nom complet">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Numéro de téléphone enregistré</label>
+                        <input type="text" placeholder="Numéro de téléphone">
+                    </div>
+                    <div class="form-group-line">
+                        <input type="checkbox" name="" id="">
+                        <label for="">J'achète en tant qu'entreprise </label>
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Informations relatives à la TVA ®</label>
+                        <div class="cb-num tva">
+                            <input type="text" placeholder="Nom de l'entreprise">
+                        </div>
+                        <select name="" id="" class="bb-gray">
+                            <option value="" class="country-ico"> FR VAT</option>
+                            <option value="">ENG</option>
+                        </select>
+                        <input type="text" placeholder="FRAB123456789" class="inf-tva">
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            
+        </form>
       </div>  
     </div>
     <footer>
