@@ -110,6 +110,10 @@ nav{
 .btn-yellow{
     background: rgba(235, 238, 22, 1);
 }
+.btn-blue{
+    background: var(--blue-theme-color);
+    color:white;
+}
 .nav-burger{
     display: flex;
     flex-direction: column;
@@ -430,6 +434,11 @@ p.foot-text{
     background-size:cover ;
     background-position: center;
 }
+.banner-by-nigth{
+    background:url("images/parisbyNight.jpeg") no-repeat;
+    background-size:cover ;
+    background-position: center;
+}
 .devis-banner, .banner-form{
     min-height:134px;
     background : var(--blue-theme-color);
@@ -569,6 +578,11 @@ p.foot-text{
     right: 16%;
     bottom:-4%;
 }
+.banner-sunset .car-banner.car5{
+    width:600px;
+    right: 0%;
+    bottom: 0%;
+}
 .banner-description{
     color:white;
     max-width:534px;
@@ -582,6 +596,9 @@ p.foot-text{
 }
 .banner-title4{
     font-size: 53px;
+}
+.banner-title5{
+    font-size: 40px;
 }
 .banner-x-text{
     display:flex;
@@ -618,8 +635,13 @@ p.foot-text{
         margin-left: 3%;
         max-width: 440px;
     }
-    .banner-title4{
+    .banner-title4, .banner-title5{
         font-size:30px;
+    }
+}
+@media screen and (max-width:940px) {
+    .banner-sunset .car-banner.car5{
+        right: -120px;
     }
 }
 @media screen and (max-width:720px){
@@ -658,7 +680,7 @@ p.foot-text{
     .banner-title{
         font-size:1.1em;
     }
-    .banner-title4{
+    .banner-title4,.banner-title5{
         font-size:23px ;
     }
     .banner-x-text{
@@ -681,6 +703,10 @@ p.foot-text{
     .banner-sunset .car-banner{
         bottom:2%;
         right: 0%;
+    }
+    .banner-sunset .car-banner.car5{
+        right:0;
+        width: 420px;
     }
 }
 @media screen and (max-width: 1040px) {
@@ -2323,5 +2349,194 @@ p.foot-text{
     }
     .inf-title h4{
         font-size: 30px;
+    }
+}
+.partneriat-info{
+    margin:55px auto;
+    display:flex;
+    justify-content: space-between;
+    max-width: 1274px;
+}
+.driver1{
+    position: relative;
+}
+.driver1 img{
+    width: 545.89px;
+    height:506px;
+}
+.text-desc-x{
+    height:95.68px ;
+    width: 404px;
+    background-color:var(--lemon-color);
+    transform: rotate(-90deg);
+    position: absolute;
+    top:50.3%;
+    left: -193px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25.52px;
+    font-family: Inter;
+    font-weight: 600;
+}
+.partneriat-info article{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.partneriat-info article h5{
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 25px;
+    margin:0;
+    margin-bottom:25px;
+}
+.partneriat-info article p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.03px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+.partneriat-info article h6{
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 25.03px;
+    text-align: left;
+    margin:0;
+}
+.partneriat-info article h6 img{
+    float: left;
+}
+.partner-btn{
+    margin-top: auto;
+    display:flex;
+    justify-content: space-between;
+    border-top: solid rgba(2, 0, 0, 0.5) 1px;
+    padding-top:15px;
+
+}
+.partner-btn .btn{
+    font-size: 15.31px;
+}
+@media screen and (max-width:1350px) {
+    .partneriat-info{
+        margin:55px
+    }
+}
+@media screen and (max-width:1196px) {
+    .partneriat-info article h5{
+        font-size: 22px;
+    }
+    .partneriat-info article{
+        width: 49%;
+    }
+    .driver1 img{
+        width: 461px;
+    }
+}
+@media screen and (max-width:1068px){
+    .partneriat-info{
+        flex-direction: column;
+        margin:15px;
+        margin-top:55px;
+        margin-left: 25px;
+    }
+    .driver1 img{
+        width: 100%;
+        min-height:326px;
+        height:max-content ;
+    }
+    .text-desc-x{
+        height: 49.68px;
+        width: 261px;
+        top: 52.3%;
+        left: -124px;
+        font-size: 15px;
+    }
+    .driver1{
+        order:2;
+    }
+    .partneriat-info article {
+        width: 100%;
+        order:1;
+        margin-bottom:55px;
+    }
+    .partneriat-info article h5 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .partneriat-info article p{
+        font-size: 13px;
+    }
+    .partneriat-info article h6{
+        font-size:15px;
+    }
+    .partner-btn .btn {
+        font-size: 12.31px;
+    }
+}
+.flash-inf{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:80px;
+    justify-content: space-between;
+    margin-left:25px;
+    margin-right: 25px;
+    max-width:1366px;
+}
+@media screen and (min-width: 1365px) {
+    .flash-inf{
+        margin:auto;
+    }
+}
+.flash-inf-item{
+    width: 342px;
+    height:334px;
+    position: relative;
+    padding-top:18px;
+    background: rgba(245, 243, 243, 1);
+    margin-bottom:60px;
+}
+.item-blue{
+   background-color: var(--blue-theme-color); 
+}
+.flash-inf-item img{
+    width: 106px;
+    position:absolute;
+    left: 15px;
+    top:-45px;
+}
+.flash-inf-item h6{
+    color:var(--blue-theme-color);
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  
+}
+.flash-inf-item.item-blue h6{
+    color:var(--lemon-color);
+}
+.flash-inf-item.item-blue p{
+    color:white;
+}
+.flash-inf-item p{
+    color:var(--blue-theme-color);
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 25px;
+    margin:0 15px
+}
+@media screen and (max-width:775px) {
+    .flash-inf-item{
+        width: 100%;
+        height:auto;
+        padding-bottom: 55px;
     }
 }
