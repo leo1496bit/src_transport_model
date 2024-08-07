@@ -2708,3 +2708,101 @@ p.foot-text{
         max-width:unset;
     }   
 }
+.connect-page{
+    max-width: 1236px;
+    background: rgba(235, 238, 22, 0.07);
+    height: 665px;
+    margin: 50px auto;
+    display: flex;
+    font-family: Inter;
+    line-height: 55px;
+}
+.connect-page img{
+    width: 50%;
+}
+.connect-form{
+    margin:50px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.connect-form h4{
+    font-weight: 800;
+    font-size: 48px;
+    margin:0;
+}
+.connect-form-group{
+    display:flex;
+    flex-direction: column;
+}
+.connect-form-group label{
+    font-weight: 700;
+    font-size: 24px;
+}
+.mb-30{
+    margin-bottom:30px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.connect-form-group input{
+    height:54px;
+    border: 2px solid rgba(26, 34, 46, 1);
+    border-radius: 10px;
+    padding-left: 25px;
+}
+.connect-form a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.connect-form .btn{
+   width: 140px;
+   display: inline-block;
+   min-height:40px;
+}
+.inscript-link{
+    display:flex;
+    flex-wrap: wrap;
+}
+.inscript-link img{
+    width:30px;
+    vertical-align: sub;
+}
+
+.inscript-link a{
+    text-decoration: underline;
+    font-weight:800;
+}
+.mr-15{
+    margin-right: 15px;
+}
+@media screen and (max-width:1020px) {
+    .connect-form .btn{
+        width: unset;
+    }
+}
+@media screen and (max-width:680px) {
+    .connect-form h4{
+        font-size: 24px;
+        margin-bottom:10px;
+    } 
+    .connect-form-group label{
+        font-size: 15px;
+    }
+    .connect-form a{
+        font-size: 10px;
+    }
+    .connect-form{
+        margin:50px 5px;
+    }
+    .connect-page{
+        height: unset;
+        line-height: 24.21px;
+    }
+    .mb-30,.mb-25{
+        margin-bottom: 10px;
+    }
+    .connect-form-group input{
+        height:25px;
+    }
+}
