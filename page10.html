@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<header class="header-xl">
+    <img src="images/logo.png" alt="" class="logo">
+    <div class="nav-header">
+        <div class="nav-connect">
+            <div class="ico-lang">
+                <img src="images/usa.png" alt="" class="icon-lang">
+                <img src="images/german.png" alt="" class="icon-lang">
+                <img src="images/france.png" alt="" class="icon-lang">
+            </div>
+            <div class="connect-link">
+               <a href="page7.html"><img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION</a> 
+            </div>
+        </div>
+        <nav>
+           <div class="nav-item"><a href="home.html">HOME</a></div> 
+          <div class="nav-item nav-drop-down"> <label for="drop-down">NOS SERVICES <img src="images/nextArrow.png" alt=""></label>
+            <input type="checkbox" id="drop-down">
+            <ul class="drop-down">
+                <li><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                <li><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                <li><a href="page4.html">A PROPOSAL</a></li>
+            </ul>
+            </div>
+           <div class="nav-item"> <a href="page5.html">SOLUTION ENTREPRISE</a> </div>
+           <div class="nav-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
+        </nav>
+    </div>
+</header>
+<header class="header-small">
+    <img src="images/logo.png" alt="" class="logo">
+    <button class="btn btn-yellow">ESPACE CONNEXION</button>
+    <input type="checkbox" id="input-burger"><label  for="input-burger" class="pointer"><img src="icon/burger.png" alt="" class="burger"></label>
+    <input type="checkbox" id="input-close" name="">
+    <div class="navbar-xs">
+        <div class="navbar-xs-header ">
+            <h5 class="navbar-xs-title">SRC TRANSPORT</h5>
+          <label for="input-burger" class="pointer">
+            <img src="icon/gtk-close.png" class="close-btn" alt="">
+          </label>  
+        </div>
+        <div class="nav-xs-body">
+            <div class="nav-xs-item"><a href="home.html">HOME</a></div>
+            <div class="nav-xs-item"> NOS SERVICES</div>
+            <ul class="drop-down-xs">
+                <li class="nav-xs-item"><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                <li class="nav-xs-item"><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                <li class="nav-xs-item"><a href="page4.html">A PROPOSAL</a></li>
+            </ul>
+            <div class="nav-xs-item"><a href="page5.html"> SOLUTION ENTREPRISE</a></div>
+            <div class="nav-xs-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
+
+        </div>
+    </div>
+</header>
+    <div class="main">
+        <p class="form-car-title">
+            DEVENEZ CLIENT SRC TRANSPORT
+        </p>
+      <div class="form-car-mission insc-form form-client">
+        <div class="form-field-car">
+            <div class="title-logo">
+                <img src="images/form-client-logo.png" alt="">
+                <p>
+                    DEVENEZ CLIENT SRC TRANSPORT
+                </p>
+            </div>
+            <div class="form-progress-group">
+                <div class="form-progress-element active">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>INFORMATIONS CHAUFFEUR</p> 
+                </div>
+                <div class="form-progress-element border-none">
+                    <div class="circle"></div> <div class="circle-select"></div> <p>ADRESSE POSTALE</p> 
+                </div>
+            </div>
+            <div class="form-prog-finalize">
+                <h4>Demande  de  convoyage N*120</h4>
+                <p>59€</p>
+                <p>Mission , 1200</p>
+                <h5>Nos Prestation De Convoyage Inclus</h5>
+                <ul>
+                    <li>Carburant</li>
+                    <li>Transport</li>
+                    <li>Péage,</li>
+                    <li>Lavage</li>
+                    <li>W garage</li>
+                </ul>
+            </div>
+  
+            <div class="logo-form"><img src="images/logo.png" alt="" class="logo"></div>
+        </div>
+        <form action="" class="form-transport">
+            <fieldset>
+                <h4>INFORMATION ENTREPRISE</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">Nom de la société*</label>
+                        <input type="text" placeholder="Saisissez votre nom de  société">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numero de siret *</label>
+                        <input type="text" placeholder="799250450">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email *</label>
+                        <input type="text" placeholder="Saisissez  votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numero de telephone *</label>
+                        <input type="text" placeholder="Saisissez votre numero">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mot de passe*</label>
+                        <input type="text" placeholder="Tapez votre mot de passe">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mot de passe*</label>
+                        <input type="text" placeholder="Retapez votre mot de passe">
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>ADRESSE POSTALE</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">Adresse*</label>
+                        <input type="text" placeholder="Saisissez votre adresse">
+                    </div>
+                    <div class="form-group">
+                        <label for="">ville *</label>
+                        <input type="text" placeholder="Saisissez votre ville">
+                    </div>
+                    <div class="form-group">
+                        <label for="">T.V.A. *</label>
+                        <input type="text" placeholder="T.V.A. *">
+                    </div>
+                    <div class="face-driver-lic form-group img-profile">
+                        <p>Photo de Profil</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file w-full">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Informations relatives à la TVA ®</label>
+                        <div class="cb-num tva">
+                            <input type="text" placeholder="Nom de l'entreprise">
+                        </div>
+                        <select name="" id="" class="bb-gray">
+                            <option value="" class="country-ico"> FR VAT</option>
+                            <option value="">ENG</option>
+                        </select>
+                        <input type="text" placeholder="FRAB123456789" class="inf-tva">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">J’accepte les cgv voir les conditions generals d e vente</label>
+                    </div>   
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14" > Précédent </button>
+                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+
+            </fieldset>
+        </form>
+      </div>  
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <h5 class="foot-title"> <img src="images/anonym.png" alt="" width="68"> Nos driver partner couvrent l'ensemble des régions de France,</h5>
+        <h4 class="d-number">+97</h4>
+        <div class="footer-group">
+            <div class="footer-section">
+                <img src="images/logo.png" alt="" class="foot-logo">
+                <p class="foot-text">
+                    Service de convoyage de véhicule en France est sur le continent européens
+                </p>
+                <div class="footer-link">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                    <img src="images/linkdin.png" alt="">
+                    <img src="images/whatsapp.png" alt="">
+
+                </div>
+            </div>
+            <div class="footer-section foot-text">
+                <h5>Pages</h5>
+                <div class="foot-line"></div>
+                <ul>
+                    <li> <img src="images/arrow.png" alt="" width="12"> Home</li>
+                    <li> <img src="images/arrow.png" alt="" width="12"> Assurance Convoyage</li>
+                    <li><img src="images/arrow.png" alt="" width="12"> À Proposal </li>
+                    <li> <img src="images/arrow.png" alt="" width="12"> Nos Vehicles Convoyés</li>
+                    <li><img src="images/arrow.png" alt="" width="12"> Solution Entreprise </li>
+                    <li><img src="images/arrow.png" alt="" width="12"> Devenir Driver</li>
+
+                </ul>
+            </div>
+            <div class="footer-section foot-text">
+                <h5>Horaire d’ouverture</h5>
+                <div class="foot-line"></div>
+                <ul>
+                    <li> <img src="images/arrow.png" alt="" width="12"> lundi  09:00–17:00</li>
+                    <li> <img src="images/arrow.png" alt="" width="12"> mardi  09:00–17:00</li>
+                    <li><img src="images/arrow.png" alt="" width="12"> mercredi 09:00–17:00</li>
+                    <li> <img src="images/arrow.png" alt="" width="12"> jeudi  09:00–17:00</li>
+                    <li><img src="images/arrow.png" alt="" width="12"> vendredi  09:00–17:00 </li>
+                    <li><img src="images/arrow.png" alt="" width="12"> samedi  Fermé</li>
+                    <li><img src="images/arrow.png" alt="" width="12"> dimanche Fermé</li>
+                    <li> Intervention du lundi au samedi 24/24</li>
+
+
+                </ul>
+            </div>
+            <div class="footer-section foot-text">
+                <h5>Accompagnement et aide</h5>
+                <div class="foot-line"></div>
+                <ul>
+                    <li> <img src="images/arrow.png" alt="" width="12"> Contact</li>
+                    <li> <img src="images/arrow.png" alt="" width="12"> CGV ,CGU</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Contacts France</h5>
+                <div class="foot-line"></div>
+            <div class="info-contact">
+                <h4>Adresse siège social</h4>
+                <img src="images/location.png" alt=""> <p> 28 avenue des pépinières <br>Fresnes 94260</p>
+            </div>   
+            <div class="info-contact">
+                <h4>Numéro de contact</h4>
+                <img src="images/phone.png" alt=""> <p> 06.60.09.89.39</p>
+            </div>    
+            </div>
+
+        </div>
+       <div class="send-mail">
+        <input type="text" class="input-mail" placeholder="Entrer votre Email......"> 
+        <button>
+            <img src="images/sendBtn.png" alt="">
+        </button>
+       </div>
+       <div class="copyright">
+        <div>Copyright</div>   <div>2024 <span>SRC TRANSPORT</span>  All Rights Reserved.</div> <div>©</div>
+       </div>
+    </footer>
+    
+
+</body>
+</html>

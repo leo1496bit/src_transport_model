@@ -69,6 +69,60 @@ nav{
     font-weight: 600;
     font-size: 26px;
     font-family: "Titillium Web", sans-serif;
+    position: relative;
+}
+.nav-item a, .connect-link a{
+    color:black;
+    text-decoration: none;
+}
+.nav-item img{
+    width: 12px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.drop-down{
+    width: 220px;
+    height:120px;
+    position: absolute;
+    background: rgba(221, 219, 219, 0.8);
+    transform: translateY(-200%);
+    margin: 0;
+    padding: 5px;
+    z-index: 2;
+}
+.drop-down li{
+    list-style: none;
+}
+.drop-down a{
+    font-family: Titillium Web;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+    color:black;     
+}
+.nav-drop-down label{
+    cursor: pointer;
+}
+#drop-down:checked ~ .drop-down{
+    transform: translateY(15px);
+}
+#drop-down{
+    visibility: hidden;
+}
+.drop-down-xs{
+    width: 100%;
+    height: 165px;
+    padding-left: 25px;
+    margin:0;
+}
+.drop-down-xs li{
+    list-style: none;
+}
+.drop-down-xs a{
+    color:white;
+    text-decoration: none;
 }
 @media screen  and (min-width:1187px) {
     .header-small{
@@ -176,6 +230,10 @@ nav{
     margin-left:1rem;
     border-bottom:1px dashed white;
     line-height: 55px;
+}
+.nav-xs-item a{
+    color:white;
+    text-decoration: none;
 }
 .navbar-xs-title{
     color:white;
@@ -1277,10 +1335,18 @@ p.foot-text{
 }
 .title-logo{
     display:flex;
-    margin:35px 20px 35px 27px;
+    margin:35px 20px 35px 27px; 
+}
+.form-client .title-logo{
+    margin: 35px 5px 35px 5px;
 }
 .title-logo img{
     width:84px;
+}
+.form-client .title-logo img{
+    width: 70px;
+    height:70px;
+    margin-right: 5px;
 }
 .form-progress-element{
     height:62px;
@@ -1306,6 +1372,7 @@ p.foot-text{
     top: -2px;
     z-index: 2;
 }
+
 .circle-select{
     display:none;
     width: 40px;
@@ -1314,6 +1381,7 @@ p.foot-text{
     top: -9px;
     z-index: 1;
 }
+
 .form-progress-element.active .circle{
     background-color: var(--blue-theme-color);
 }
@@ -1406,16 +1474,139 @@ p.foot-text{
 .w-full{
     width: 100%;
 }
+.w-23{
+    width: 23%;
+}
+.w-32{
+    width: 32%;
+}
 .form-group label{
     margin-bottom:7px;
 }
-.form-group input, .form-group textarea, .form-group select{
+.form-group input, .form-group textarea, .form-group select, .form-group .input-file{
     min-height:35px;
     border:none;
     padding-left:5%;
     border-radius:5px;
 }
+.form-group .input-file{
+    border: 1px dashed rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.input-file input[type='file']{
+    display:none;
+}
+.add-input{
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 500;
+    justify-self: flex-end;
+    line-height: 27.33px;
+    margin-right: 25px;
+}
+.face-driver-upload.input-file .add-input{
+    font-size:70px;
+}
+.img-profile .face-driver-upload.input-file .add-input{
+    font-size: 48px;
+    align-self: baseline;
+    color: rgba(0, 26, 51, 0.2);
 
+}
+.input-file .holder-gray, .input-file .holder-black{
+    font-size:11px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 27.33px;
+    color: rgba(0, 0, 0, 0.4);
+    align-self: center;
+}
+.input-file .holder-black{
+    color:black;
+}
+.form-group.w-23 .add-input{
+    margin-right: 0;
+    font-size: 29.57px;
+    font-weight:900;
+    margin-bottom: 0;
+    align-self: center;
+}
+.form-group.w-23>label{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight:900;
+    line-height: 27.33px;
+}
+.list-order-inline{
+    display: flex;
+    font-size: 14.75px;
+    justify-content:space-between;
+    width: 100%;
+    padding-left:15px;
+}
+.face-driver-lic,.form-content .face-driver-lic p {
+    font-size: 10.85px;
+    font-weight:500;
+    line-height: 27.13px;
+    font-family: Inter;
+}
+.form-content .img-profile.face-driver-lic p{
+    margin:0;
+    margin-bottom: 7px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42px;
+}
+.face-driver-block{
+    display: flex;
+    justify-content: space-between;
+}
+.face-driver-block>div{
+    height: 94.77px;
+    width: 47%;
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px dashed rgba(0, 0, 0, 0.4);
+}
+.img-profile .face-driver-block>div{
+    height:unset;
+}
+.face-driver-block.identity>div{
+    width: 100%;
+}
+.face-driver-block .face-driver-upload.input-file{
+    justify-content: center;
+    padding-left: 0;
+}
+.face-driver-block .face-driver-upload.input-file.hx-1{
+    justify-content: space-around;
+}
+.face-driver-upload .add-input{
+    margin:0;
+    align-self: center;
+}
+.face-driver-exemple h6{
+    margin:0;
+    text-align: center;
+}
+.face-driver-lic ul, .face-driver-lic p.text-desc-video {
+    line-height: 15px;
+    padding-left: 15px;
+    font-size: 8px;
+}
+.face-driver-lic p.text-desc-video{
+    padding-left:0;
+}
+
+.face-driver-exemple img{
+    width: 100%;
+}
+.form-group.w-32 label{
+    font-size: 14px;
+}
 .form-group textarea{
     min-height: 55px;
     padding-left:2%;
@@ -1463,11 +1654,21 @@ p.foot-text{
     font-size: 14px;
     margin-left: 40px;
 } 
+.insc-form.form-client .form-progress-element{
+    line-height: 20px;
+}
 .insc-form .title-logo{
     margin-left: 0px;
 }
 .insc-form.form-car-mission{
     font-size: 20px;
+}
+.insc-form.form-car-mission .title-logo{
+    margin-left: 13px;
+}
+.insc-form.form-car-mission.form-client{
+    font-size: 14px;
+    line-height: 42px;
 }
 .lang{
     display:flex;
@@ -1479,6 +1680,15 @@ p.foot-text{
     font-weight: 400;
     line-height: 22px;
     font-size: 16px;
+    margin-bottom: 0;
+}
+.form-content .text-doc-info{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
 }
 @media screen and (max-width:890px) {
     .form-content{
@@ -1538,6 +1748,12 @@ p.foot-text{
     }
     .form-car-title{
         display: block;
+    }
+    .list-order-inline{
+        font-size: 9px;
+    }
+    .list-order-inline li:first-of-type{
+        margin-right: 15px;
     }
 }
 .form-offer-finalize h4{
@@ -2439,6 +2655,7 @@ p.foot-text{
     font-size: 25.52px;
     font-family: Inter;
     font-weight: 600;
+    color:black;
 }
 .partneriat-info article{
     width: 45%;
@@ -2737,10 +2954,14 @@ p.foot-text{
     max-width: 652px;
     margin-left: 55px;
 }
-.become-pilote .btn{
+.become-pilote a{
     height: 53px;
     align-self: center;
     margin-right: 25px;
+}
+.become-pilote .btn{
+    height: 100%;
+    cursor: pointer;
 }
 @media screen and (max-width:1052px) {
     .bs-it{

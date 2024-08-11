@@ -9,47 +9,59 @@
 </head>
 <body>
     <header class="header-xl">
-            <img src="images/logo.png" alt="" class="logo">
-            <div class="nav-header">
-                <div class="nav-connect">
-                    <div class="ico-lang">
-                        <img src="images/usa.png" alt="" class="icon-lang">
-                        <img src="images/german.png" alt="" class="icon-lang">
-                        <img src="images/france.png" alt="" class="icon-lang">
-                    </div>
-                    <div class="connect-link">
-                        <img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION
-                    </div>
-                </div>
-                <nav>
-                   <div class="nav-item">HOME</div> 
-                   <div class="nav-item">NOS SERVICES</div>
-                   <div class="nav-item">SOLUTION ENTREPRISE</div>
-                   <div class="nav-item">DEVENIR DRIVER</div>
-                </nav>
-            </div>
-    </header>
-    <header class="header-small">
         <img src="images/logo.png" alt="" class="logo">
-        <button class="btn btn-yellow">ESPACE CONNEXION</button>
-        <input type="checkbox" id="input-burger"><label  for="input-burger" class="pointer"><img src="icon/burger.png" alt="" class="burger"></label>
-        <input type="checkbox" id="input-close" name="">
-        <div class="navbar-xs">
-            <div class="navbar-xs-header ">
-                <h5 class="navbar-xs-title">SRC TRANSPORT</h5>
-              <label for="input-burger" class="pointer">
-                <img src="icon/gtk-close.png" class="close-btn" alt="">
-              </label>  
+        <div class="nav-header">
+            <div class="nav-connect">
+                <div class="ico-lang">
+                    <img src="images/usa.png" alt="" class="icon-lang">
+                    <img src="images/german.png" alt="" class="icon-lang">
+                    <img src="images/france.png" alt="" class="icon-lang">
+                </div>
+                <div class="connect-link">
+                   <a href="page7.html"><img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION</a> 
+                </div>
             </div>
-            <div class="nav-xs-body">
-                <div class="nav-xs-item"> HOME</div>
-                <div class="nav-xs-item"> NOS SERVICES</div>
-                <div class="nav-xs-item"> SOLUTION ENTREPRISE</div>
-                <div class="nav-xs-item"> DEVENIR DRIVER</div>
-
-            </div>
+            <nav>
+               <div class="nav-item"><a href="home.html">HOME</a></div> 
+              <div class="nav-item nav-drop-down"> <label for="drop-down">NOS SERVICES <img src="images/nextArrow.png" alt=""></label>
+                <input type="checkbox" id="drop-down">
+                <ul class="drop-down">
+                    <li><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                    <li><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                    <li><a href="page4.html">A PROPOSAL</a></li>
+                </ul>
+                </div>
+               <div class="nav-item"> <a href="page5.html">SOLUTION ENTREPRISE</a> </div>
+               <div class="nav-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
+            </nav>
         </div>
-    </header>
+</header>
+<header class="header-small">
+    <img src="images/logo.png" alt="" class="logo">
+    <button class="btn btn-yellow">ESPACE CONNEXION</button>
+    <input type="checkbox" id="input-burger"><label  for="input-burger" class="pointer"><img src="icon/burger.png" alt="" class="burger"></label>
+    <input type="checkbox" id="input-close" name="">
+    <div class="navbar-xs">
+        <div class="navbar-xs-header ">
+            <h5 class="navbar-xs-title">SRC TRANSPORT</h5>
+          <label for="input-burger" class="pointer">
+            <img src="icon/gtk-close.png" class="close-btn" alt="">
+          </label>  
+        </div>
+        <div class="nav-xs-body">
+            <div class="nav-xs-item"><a href="home.html">HOME</a></div>
+            <div class="nav-xs-item"> NOS SERVICES</div>
+            <ul class="drop-down-xs">
+                <li class="nav-xs-item"><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                <li class="nav-xs-item"><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                <li class="nav-xs-item"><a href="page4.html">A PROPOSAL</a></li>
+            </ul>
+            <div class="nav-xs-item"><a href="page5.html"> SOLUTION ENTREPRISE</a></div>
+            <div class="nav-xs-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
+
+        </div>
+    </div>
+</header>
     <div class="main">
        <div class="banner-head">
         <div class="banner light-on">

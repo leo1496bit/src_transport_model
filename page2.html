@@ -9,47 +9,59 @@
 </head>
 <body>
     <header class="header-xl">
-            <img src="images/logo.png" alt="" class="logo">
-            <div class="nav-header">
-                <div class="nav-connect">
-                    <div class="ico-lang">
-                        <img src="images/usa.png" alt="" class="icon-lang">
-                        <img src="images/german.png" alt="" class="icon-lang">
-                        <img src="images/france.png" alt="" class="icon-lang">
-                    </div>
-                    <div class="connect-link">
-                        <img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION
-                    </div>
-                </div>
-                <nav>
-                   <div class="nav-item">HOME</div> 
-                   <div class="nav-item">NOS SERVICES</div>
-                   <div class="nav-item">SOLUTION ENTREPRISE</div>
-                   <div class="nav-item">DEVENIR DRIVER</div>
-                </nav>
-            </div>
-    </header>
-    <header class="header-small">
         <img src="images/logo.png" alt="" class="logo">
-        <button class="btn btn-yellow">ESPACE CONNEXION</button>
-        <input type="checkbox" id="input-burger"><label  for="input-burger" class="pointer"><img src="icon/burger.png" alt="" class="burger"></label>
-        <input type="checkbox" id="input-close" name="">
-        <div class="navbar-xs">
-            <div class="navbar-xs-header ">
-                <h5 class="navbar-xs-title">SRC TRANSPORT</h5>
-              <label for="input-burger" class="pointer">
-                <img src="icon/gtk-close.png" class="close-btn" alt="">
-              </label>  
+        <div class="nav-header">
+            <div class="nav-connect">
+                <div class="ico-lang">
+                    <img src="images/usa.png" alt="" class="icon-lang">
+                    <img src="images/german.png" alt="" class="icon-lang">
+                    <img src="images/france.png" alt="" class="icon-lang">
+                </div>
+                <div class="connect-link">
+                   <a href="page7.html"><img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION</a> 
+                </div>
             </div>
-            <div class="nav-xs-body">
-                <div class="nav-xs-item"> HOME</div>
-                <div class="nav-xs-item"> NOS SERVICES</div>
-                <div class="nav-xs-item"> SOLUTION ENTREPRISE</div>
-                <div class="nav-xs-item"> DEVENIR DRIVER</div>
-
-            </div>
+            <nav>
+               <div class="nav-item"><a href="home.html">HOME</a></div> 
+              <div class="nav-item nav-drop-down"> <label for="drop-down">NOS SERVICES <img src="images/nextArrow.png" alt=""></label>
+                <input type="checkbox" id="drop-down">
+                <ul class="drop-down">
+                    <li><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                    <li><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                    <li><a href="page4.html">A PROPOSAL</a></li>
+                </ul>
+                </div>
+               <div class="nav-item"> <a href="page5.html">SOLUTION ENTREPRISE</a> </div>
+               <div class="nav-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
+            </nav>
         </div>
-    </header>
+</header>
+<header class="header-small">
+    <img src="images/logo.png" alt="" class="logo">
+    <button class="btn btn-yellow">ESPACE CONNEXION</button>
+    <input type="checkbox" id="input-burger"><label  for="input-burger" class="pointer"><img src="icon/burger.png" alt="" class="burger"></label>
+    <input type="checkbox" id="input-close" name="">
+    <div class="navbar-xs">
+        <div class="navbar-xs-header ">
+            <h5 class="navbar-xs-title">SRC TRANSPORT</h5>
+          <label for="input-burger" class="pointer">
+            <img src="icon/gtk-close.png" class="close-btn" alt="">
+          </label>  
+        </div>
+        <div class="nav-xs-body">
+            <div class="nav-xs-item"><a href="home.html">HOME</a></div>
+            <div class="nav-xs-item"> NOS SERVICES</div>
+            <ul class="drop-down-xs">
+                <li class="nav-xs-item"><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                <li class="nav-xs-item"><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                <li class="nav-xs-item"><a href="page4.html">A PROPOSAL</a></li>
+            </ul>
+            <div class="nav-xs-item"><a href="page5.html"> SOLUTION ENTREPRISE</a></div>
+            <div class="nav-xs-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
+
+        </div>
+    </div>
+</header>
     <div class="main">
         <p class="form-car-title">
             Besoin de déplacer votre véhicule ?
@@ -126,8 +138,74 @@
                     </div>
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" ><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>Adresse de  livraison</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">Adresse de d'arrivée *</label>
+                        <input type="text" placeholder="Adresse de d'arrivée *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nom du client de livraison *</label>
+                        <input type="text" placeholder="Nom du client de livraison *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Type de lieu de d'arrivée *</label>
+                        <input type="text" placeholder="Type de lieu de d'arrivée *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numéro de téléphone *</label>
+                        <input type="text" placeholder="Numéro de téléphone *">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">E-mail client d'arrivée *</label>
+                        <input type="text" placeholder="E-mail client d'arrivée *">
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>Informations du véhicule</h4>
+                <div class="form-content">
+                    <div class="form-group w-full">
+                        <label for="">Modèle et marque du véhicule *</label>
+                        <input type="text" placeholder="Modèle et marque du véhicule *">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Plaque d'immatriculation *</label>
+                        <input type="text" placeholder="Plaque d'immatriculation *">
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>Plage horaire du véhicule</h4>
+                <div class="form-content">
+                    <div class="form-group w-full">
+                        <label for="">Disponibilité du vehicule à partir du *</label>
+                        <input type="text" placeholder="Disponibilité du vehicule à partir du *">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Livraison au plus tard le *</label>
+                        <input type="text" placeholder="Livraison au plus tard le *">
+                    </div>
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
@@ -153,8 +231,8 @@
                     </div>
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
@@ -183,8 +261,8 @@
                     </div>
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
@@ -242,7 +320,7 @@
                     </div>
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
                     <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
@@ -251,6 +329,7 @@
         </form>
       </div>  
     </div>
+    <script src="script.js"></script>
     <footer>
         <h5 class="foot-title"> <img src="images/anonym.png" alt="" width="68"> Nos driver partner couvrent l'ensemble des régions de France,</h5>
         <h4 class="d-number">+97</h4>

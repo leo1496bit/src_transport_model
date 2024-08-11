@@ -18,14 +18,21 @@
                         <img src="images/france.png" alt="" class="icon-lang">
                     </div>
                     <div class="connect-link">
-                        <img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION
+                       <a href="page7.html"><img src="icon/sms-bubble.png" alt="" width="13.97"> ESPACE CONNEXION</a> 
                     </div>
                 </div>
                 <nav>
-                   <div class="nav-item">HOME</div> 
-                   <div class="nav-item">NOS SERVICES</div>
-                   <div class="nav-item">SOLUTION ENTREPRISE</div>
-                   <div class="nav-item">DEVENIR DRIVER</div>
+                   <div class="nav-item"><a href="home.html">HOME</a></div> 
+                  <div class="nav-item nav-drop-down"> <label for="drop-down">NOS SERVICES <img src="images/nextArrow.png" alt=""></label>
+                    <input type="checkbox" id="drop-down">
+                    <ul class="drop-down">
+                        <li><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                        <li><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                        <li><a href="page4.html">A PROPOSAL</a></li>
+                    </ul>
+                    </div>
+                   <div class="nav-item"> <a href="page5.html">SOLUTION ENTREPRISE</a> </div>
+                   <div class="nav-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
                 </nav>
             </div>
     </header>
@@ -42,10 +49,15 @@
               </label>  
             </div>
             <div class="nav-xs-body">
-                <div class="nav-xs-item"> HOME</div>
+                <div class="nav-xs-item"><a href="home.html">HOME</a></div>
                 <div class="nav-xs-item"> NOS SERVICES</div>
-                <div class="nav-xs-item"> SOLUTION ENTREPRISE</div>
-                <div class="nav-xs-item"> DEVENIR DRIVER</div>
+                <ul class="drop-down-xs">
+                    <li class="nav-xs-item"><a href="page3.html">ASSURANCE COVOYAGE</a></li>
+                    <li class="nav-xs-item"><a href="page1.html">NOS VEHICLE S CONVOYES</a></li>
+                    <li class="nav-xs-item"><a href="page4.html">A PROPOSAL</a></li>
+                </ul>
+                <div class="nav-xs-item"><a href="page5.html"> SOLUTION ENTREPRISE</a></div>
+                <div class="nav-xs-item"><a href="page6.html"> DEVENIR DRIVER</a></div>
 
             </div>
         </div>
@@ -105,7 +117,7 @@
             <div class="logo-form"><img src="images/logo.png" alt="" class="logo"></div>
         </div>
         <form action="" class="form-transport">
-            <fieldset class="d-none">
+            <fieldset>
                 <h4>INFORMATIONS CHAUFFEUR</h4>
                 <div class="form-content">
                     <div class="form-row w-full">
@@ -154,7 +166,7 @@
                 </div>
                 <div class="btn-change-page">
                     <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" class="next-btn"  onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
@@ -176,8 +188,8 @@
                     
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
@@ -218,12 +230,12 @@
                         </div>  
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
-            <fieldset>
+            <fieldset class="d-none">
                 <h5>AVEZ-VOUS UNE RC CIRCULATION ?</h5>
                 <div class="form-content">
                     <div class="form-row w-full">
@@ -255,13 +267,225 @@
                     </p>
                 </div>
                 <div class="btn-change-page">
-                    <button type="button"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>INFORMATION PERMIS DE CONDUIRE</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">Ville de delivrance*</label>
+                        <input type="text" placeholder="Saisissez votre ville">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Date de delivrance*</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Numero de permis*</label>
+                        <input type="text" placeholder="Saisissez votre numero de permis">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-relev-point">Relevé de point*</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-gray">Document Relevé de point</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face avant incliner</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face avant du permis</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face avant incliner</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face arriére du permis</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face avant incliner</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face arriére inclinee</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face avant incliner</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face arriére du permis</div>     <label class=" pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <p class="w-full">TERMES</p>
+                    <ol class="list-order-inline">
+                        <li>conforme</li>
+                        <li>Pas de reflet</li>
+                        <li>Pas de photo couper</li>
+                        <li>pas de photo flou </li>
+                    </ol>
+                    <div class="face-driver-lic form-group">
+                        <p>photo visage+ permis*</p>
+                        <div class="face-driver-block">
+                            <div class="face-driver-upload input-file">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                            <div class="face-driver-exemple">
+                                <h6>Exemple</h6>
+                                <img src="images/exemple1.png" alt="">
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Votre visage sur la photo doit être clair et reconnaissable.</li>
+                            <li>Les caractères sur la pièce d'identité doivent être clairs lisible .</li>  
+                            <li>La note doit être marquée comme ceci  « 8LABLY ».</li>
+                            <li>La note doit porter la mention « Date du jour » comme ceci  (jj-mm-aaaa).</li>
+                            <li>La note doit être marquée de votre signature.</li>
+                        </ul>
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>video visage+ permis*</p>
+                        <div class="face-driver-block">
+                            <div class="face-driver-upload input-file">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                            <div class="face-driver-exemple">
+                                <h6>Exemple</h6>
+                                <img src="images/exemple2.png" alt="">
+                            </div>
+                        </div>
+                        <p class="text-desc-video">
+                        Fournissez une vidéo de vous avec votre permis tenue en main (votre visage sur la pièce d'identité doit être clair et reconnaissable) et une note marquée « Date du jour », « 8LABLY » et « Signature »
+                        Dans la vidéo, veuillez lire le contenu suivant : « je soussigner (votre nom prénom) ,que mes document son légitime et que je suis prêt à assumer toutes les responsabilités légales correspondantes »
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>DOCUMENT D'IDENTITE</h4>
+                <div class="form-content">
+                    <div class="form-group w-full">
+                        <label for="">Ville de delivrance*</label>
+                        <input type="text" placeholder="Saisissez votre ville">
+                    </div>
+                    
+                    <div class="face-driver-lic form-group">
+                        <p>photo visage+ CARTE INDENTITE TE</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file w-full">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>photo visage+ CARTE INDENTITE TE</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>Photo recto</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>Photo verso</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file">
+                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+               
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>DOCUMENT PROFESSIONNELLE</h4>
+                <div class="form-content">
+                    <div class="form-group w-32">
+                        <label for="">Nom de la societé*</label>
+                        <input type="text" placeholder="Nom de la societé*">
+                    </div>
+                    <div class="form-group w-32">
+                        <label for="">Paque immatriculation *</label>
+                        <input type="text" placeholder="Paque immatriculation *">
+                    </div>
+                    <div class="form-group w-32">
+                        <label for="">Statut de la societé*</label>
+                        <select name="" id="">
+                            <option value="Statut de la societé">Statut de la societé</option>
+                            <option value="sarl">sarl</option>
+                        </select>
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>kbis*</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file w-full hx-1">
+                                <div class="holder-gray">Extract du Kbis</div> <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>Rc circulation*</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file hx-1">
+                                <div class="holder-gray">Attestation d’assurance</div>    <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>Carte grise w garage*</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file hx-1">
+                                <div class="holder-gray">Change File</div>    <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face-driver-lic form-group">
+                        <p>ATTESTATION HEBERGEMENT*</p>
+                        <div class="face-driver-block identity">
+                            <div class="face-driver-upload input-file hx-1">
+                                <div class="holder-gray">Attestation Hebergement</div>    <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-doc-info">
+                        Le certificat W garage autorise temporairement la circulation d'un véhicule avant son immatriculation permanente. Il est exclusivement attribué aux professionnels tels que les réparateurs, vendeurs, transporteurs, carrossiers, importateurs et constructeurs pour l'utilisation de certains modèles de véhicules. Sa validité est annuelle et nécessite un renouvellement chaque année civile.
+                    </p>
+                    
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
                     <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
+               
             </fieldset>
         </form>
       </div>  
     </div>
+    <script src="script.js"></script>
     <footer>
         <h5 class="foot-title"> <img src="images/anonym.png" alt="" width="68"> Nos driver partner couvrent l'ensemble des régions de France,</h5>
         <h4 class="d-number">+97</h4>
