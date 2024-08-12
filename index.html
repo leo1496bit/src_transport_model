@@ -248,9 +248,59 @@ propriétaire.
         <input type="text" placeholder="votre nom*">
         <input type="text" placeholder="Adresse e-mail*">
         <textarea name="" id="" placeholder="Message*"></textarea>
-        <div class="message-send"><button type="submit">ENVOYER LE MESSAGE</button> <button class="chatbox"><img src="images/chatbox.png" alt=""></button></div>
+        <div class="message-send"><button type="submit">ENVOYER LE MESSAGE</button> <button class="chatbox" type="button"><img src="images/chatbox.png" alt=""></button></div>
     </form>
+    <div class="chat">
+        <div class="chat-title">
+            <div class="chat-title-name">Buddy</div>
+            <div class="chat-status">Online</div>
+            <img src="images/down.png" alt="" id="close-chat">
+        </div>
+        <div class="chat-content">
+            <div class="chat-item">
+                <img src="images/bot.png" alt="">
+                <div class="bot-text">
+                    Un premier état des lieux sur l'application avec un envoi pour les clients.
+                </div>
+            </div>
+            <div class="chat-item chat-right">
+                <div class="bot-text">
+                    Un premier état des lieux sur l'applicat
+                </div>
+            </div>
+            <div class="chat-item">
+                <img src="images/bot.png" alt="">
+                <div class="bot-text">
+                    Un premier état des lieux sur l'application avec un envoi pour les clients.
+                </div>
+            </div>
+            <div class="chat-item">
+                <img src="images/bot.png" alt="">
+                <div class="bot-text">
+                    Un premier état des lieux sur l'application avec un envoi pour les clients.
+                </div>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Ecrire une response">
+                <button><img src="images/gif.png" alt=""></button>
+                <button><img src="images/sticker.png" alt=""></button>
+                <button class="mr-15"><img src="images/joinFile.png" alt=""></button>
+            </form>
+        </div>
+    </div>
 </div>
+<script>
+    let chat = document.querySelector('.chat');
+    let close = document.getElementById("close-chat");
+    let open = document.querySelector('.chatbox');
+    open.onclick = function(){
+        chat.style.transform = 'translateX(0%)';
+    }
+    close.onclick = function(){
+        chat.style.transform = 'translateX(200%)';
+    }
+</script>
+
 </div>
     <footer>
         <h5 class="foot-title"> <img src="images/anonym.png" alt="" width="68"> Nos driver partner couvrent l'ensemble des régions de France,</h5>
