@@ -554,6 +554,9 @@ p.foot-text{
     .foot-text, .footer-section ul{
         font-size:10px;
     }
+    .foot-text, .footer-section ul img{
+        vertical-align: top;
+    }
     .info-contact h4{
         font-size: 11px;
     }
@@ -571,6 +574,10 @@ p.foot-text{
     }
     .copyright{
         font-size:10px;
+    }
+    a[href^="tel"],a[href^="mailto"]{
+        color:inherit;
+        text-decoration:none;
     }
 }
  .main{
