@@ -254,7 +254,7 @@ nav{
     display: none!important;
 }
 .chat{
-    width: 636px;
+    width: 530px;
     position: fixed;
     bottom: 0;
     right:0;
@@ -300,11 +300,11 @@ nav{
     margin-bottom: 15px;
 }
 .chat-item img{
-  width: 74px;
-  height:74px;  
+  width: 50px;
+  height:50px;  
 }
 .bot-text{
-    width: 297px;
+    width: 258px;
     border-radius: 8px;
     border: solid 1px rgba(0,0,0,0.25);
     padding: 10px;
@@ -397,8 +397,8 @@ footer{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 25px;
-    margin-left:25px;
+    max-width: 1463px;
+    margin: auto;
 }
 .foot-logo{
     width: var(--footer-section-width);
@@ -514,6 +514,10 @@ p.foot-text{
     }
     .foot-logo{
         width: var(--footer-section-width-l);
+    }
+    .footer-group{
+        margin-right: 25px;
+        margin-left:25px;
     }
 }
 @media screen and (max-width:750px) {
@@ -793,11 +797,16 @@ p.foot-text{
     font-size: 12px;
     margin-bottom: 15px;
 }
+.banner-description a{
+    text-decoration: none;
+    color:black;
+}
 .banner-more-text{
     background-color: var(--lemon-color);
     border-radius: 0;
     width: 170px;
     display: block;
+    cursor: pointer;
 }
 @media screen and (max-width:1096px) {
     .banner-sunset .car-banner{
@@ -1234,9 +1243,9 @@ p.foot-text{
 .chatbox{
     border:none;
     background:transparent;
-    position: absolute;
-    right: -15%;
-    top:-50%;
+    position: fixed;
+    right: 0;
+    bottom:0;
 }
 .chatbox img{
     width: 85px;
@@ -3209,7 +3218,7 @@ p.foot-text{
 }
 .b-driver-info{
     text-align: center;
-    background:url("images/driver-b.jpeg") no-repeat;
+    background:url("images/femme-affaires-noir-masque-seance-interieur-voiture_1157-34265.avif") no-repeat;
     background-size: cover;
     padding-top:35px;
     filter: contrast(0.95) brightness(0.6);
