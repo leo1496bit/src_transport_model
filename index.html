@@ -81,7 +81,7 @@
         </div>
         <div class="devis-banner">
             <h4>Obtenez votre  devis en  1 minute</h4>
-            <form action="page1.html" class="devis-address">
+            <form action="page1.html" class="devis-address m-auto form-2">
                 <div class="input-address">
                  <img src="images/addr-green.png" alt="" class="addr-ico">   <input type="text"  placeholder="Adresse de depart">
                 </div>
@@ -90,8 +90,50 @@
                    </div>
                 <button class="btn">Calculer Le Prix</button>
             </form>
+           
             <div class="triangle t-bottom"></div>
             <div class="triangle t-top"></div>
+            <dialog class="diag-type-car">
+                <div class="form-car-mission insc-form form-client">
+                    <div class="form-field-car">
+                        <div class="title-logo">
+                            <p>
+                                Sélectionnez le type de véhicule à convoyer
+                            </p>
+                        </div>
+                        <div class="form-progress-group">
+                           <img src="images/car-bmw.png" alt="">
+                        </div>
+                    </div>
+                    <form action="page1.html" class="form-transport">
+                        <fieldset>
+                            <div class="form-content">
+                                <div class="form-group w-full">
+                                    <select name="" id="" data-dashlane-rid="735e5eae7a3ec174" data-dashlane-classification="other">
+                                        <option value="Statut de la societé">Type de véhicule</option>
+                                        <option value="sarl">Berline</option>
+                                        <option value="sarl">Utilitaire</option>
+                                    </select>
+                                </div>
+                                <div class="form-group w-full">
+                                    <select name="" id="" data-dashlane-rid="735e5eae7a3ec174" data-dashlane-classification="other">
+                                        <option value="Statut de la societé">Qui vous êtes</option>
+                                        <option value="sarl">Societe</option>
+                                        <option value="sarl">Particulier</option>
+                                    </select>
+                                </div>
+                                <div class="form-group-line mr-30">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Avec Restitution</label>
+                                </div>
+                            </div>
+                            <div class="btn-change-page">
+                                <button class="btn btn-yellow"> Obtenir Mon Tarif</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                  </div> 
+            </dialog>
         </div>
        </div> 
        <div class="service-list">
@@ -193,6 +235,7 @@ propriétaire.
     <a href="" class="partner-item"> <img src="images/zelus.png" alt=""></a>
     <a href="" class="partner-item"> <img src="images/peugeot.png" alt=""></a>
 </div>
+<button class="chatbox" type="button"><img src="images/chatbox.png" alt=""></button>
 <div class="stats">
     <div class="stat-item">
         <h5>1200<span>+</span></h5>
@@ -348,6 +391,13 @@ dapibus. Vivamus magna justo, lacin, convallis at tellus.”
     close.onclick = function(){
         chat.style.transform = 'translateX(200%)';
     }
+    let form = document.querySelector(".devis-address");
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        document.querySelector(".diag-type-car").showModal();
+    })
+
 </script>
 
 </div>

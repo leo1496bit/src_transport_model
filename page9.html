@@ -144,24 +144,38 @@
                         <input type="text" placeholder="Numero de telephone">
                     </div>
                     <div class="form-group">
-                        <label for="">Email*</label>
-                        <input type="text" placeholder="Saisissez  votre email">
-                    </div>
-                    <div class="form-group">
                         <label for="">Date de naissance*</label>
                         <input type="date" placeholder="Saisissez  votre date de naissance ">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Email*</label>
+                        <input type="text" placeholder="Saisissez  votre email">
                     </div>
                     <div class="form-group">
                         <label for="">Mot de passe*</label>
                         <input type="text" placeholder="Tapez votre mot de passe">
                     </div>
                     <div class="form-group">
-                        <label for="">Experience de convoyage</label>
-                        <input type="text" placeholder="Saisissez votre numero de permis">
+                        <label for="">Mot de passe*</label>
+                        <input type="text" placeholder="Retapez votre mot de passe">
                     </div>
                     <div class="form-group">
-                        <label for="">Je priviligie les courte distance</label>
-                        <input type="text" placeholder="Saisissez votre numero de permis">
+                        <label for="">Experience de convoyage*</label>
+                        <select name="" id="" data-dashlane-rid="735e5eae7a3ec174" data-dashlane-classification="other">
+                            <option value="Statut de la societé">--- Experience de convoyage</option>
+                            <option value="sarl">Moins de 1 an</option>
+                            <option value="sarl">1-2 ans</option>
+                            <option value="sarl">2-3 ans</option>
+                            <option value="sarl">3-5 ans</option>
+                            <option value="sarl">5 ans et plus</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Je priviligie les courte distance*</label>
+                        <select name="" id="" data-dashlane-rid="735e5eae7a3ec174" data-dashlane-classification="other">
+                            <option value="Statut de la societé">--- Je priviligie les courte distance</option>
+                            <option value="sarl">-200km</option>
+                        </select>
                     </div>
                 </div>
                 <div class="btn-change-page">
@@ -185,6 +199,10 @@
                         <label for="">Code postal *</label>
                         <input type="text" placeholder="Saisissez votre code postal">
                     </div>
+                    <div class="form-group w-full">
+                        <label for="">Complément d'adresse</label>
+                        <input type="text" placeholder="(Porte, Numéro batiment,..)">
+                    </div>
                     
                 </div>
                 <div class="btn-change-page">
@@ -197,8 +215,14 @@
                 <h5>INFORMATION ENTREPRISE</h5>
                 <div class="form-content">
                     <div class="form-group">
-                        <label for="">Statut de societe*</label>
-                        <input type="text" placeholder="Saisissez votre statut">
+                        <label for="">Statut de la societé*</label>
+                        <select name="" id="" data-dashlane-rid="735e5eae7a3ec174" data-dashlane-classification="other">
+                            <option value="sarl">SAS</option>
+                            <option value="sarl">SARL</option>
+                            <option value="sarl">EURL</option>
+                            <option value="sarl">EI</option>
+                            <option value="sarl">SASU</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="">Numero de siret*</label>
@@ -294,31 +318,31 @@
                         </div>
                     </div>
                     <div class="form-group w-23">
-                        <label for="input-relev-point">Face avant incliner</label>
+                        <label for="input-relev-point">Face avant</label>
                         <div class="input-file">
                             <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
                        <div class="holder-black">Face avant du permis</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
                         </div>
                     </div>
                     <div class="form-group w-23">
-                        <label for="input-relev-point">Face avant incliner</label>
+                        <label for="input-relev-point">Face arrière</label>
                         <div class="input-file">
                             <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
                        <div class="holder-black">Face arriére du permis</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
                         </div>
                     </div>
                     <div class="form-group w-23">
-                        <label for="input-relev-point">Face avant incliner</label>
+                        <label for="input-relev-point">Face avant inclinée</label>
                         <div class="input-file">
                             <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
-                       <div class="holder-black">Face arriére inclinee</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                       <div class="holder-black">Face avant inclinée</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
                         </div>
                     </div>
                     <div class="form-group w-23">
-                        <label for="input-relev-point">Face avant incliner</label>
+                        <label for="input-relev-point">Face arrière inclinée</label>
                         <div class="input-file">
                             <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
-                       <div class="holder-black">Face arriére du permis</div>     <label class=" pointer" for="input-relev-point" >+</label>
+                       <div class="holder-black">Face arriére inclinée</div>     <label class=" pointer" for="input-relev-point" >+</label>
                         </div>
                     </div>
                     <p class="w-full">TERMES</p>
@@ -378,39 +402,83 @@
                         <label for="">Ville de delivrance*</label>
                         <input type="text" placeholder="Saisissez votre ville">
                     </div>
-                    
-                    <div class="face-driver-lic form-group">
-                        <p>photo visage+ CARTE INDENTITE TE</p>
-                        <div class="face-driver-block identity">
-                            <div class="face-driver-upload input-file w-full">
-                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
-                            </div>
-                        </div>
-                        
+                    <div class="form-group">
+                        <label for="">Date de delivrance*</label>
+                        <input type="date">
                     </div>
+                    <div class="form-group">
+                        <label for="">Numero d'identité*</label>
+                        <input type="text" placeholder="Saisissez votre numéro d'identité">
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face avant</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face avant du permis</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face arrière</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face arriére du permis</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face avant inclinée</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face avant inclinée</div>     <label class="add-input pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <div class="form-group w-23">
+                        <label for="input-relev-point">Face arrière inclinée</label>
+                        <div class="input-file">
+                            <input type="file" placeholder="Document Relevé de point" id="input-relev-point">
+                       <div class="holder-black">Face arriére inclinée</div>     <label class=" pointer" for="input-relev-point" >+</label>
+                        </div>
+                    </div>
+                    <p class="w-full">TERMES</p>
+                    <ol class="list-order-inline">
+                        <li>conforme</li>
+                        <li>Pas de reflet</li>
+                        <li>Pas de photo couper</li>
+                        <li>pas de photo flou </li>
+                    </ol>
                     <div class="face-driver-lic form-group">
-                        <p>photo visage+ CARTE INDENTITE TE</p>
-                        <div class="face-driver-block identity">
+                        <p>photo visage+ permis*</p>
+                        <div class="face-driver-block">
                             <div class="face-driver-upload input-file">
                                 <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
                             </div>
+                            <div class="face-driver-exemple">
+                                <h6>Exemple</h6>
+                                <img src="images/exemple1.png" alt="">
+                            </div>
                         </div>
+                        <ul>
+                            <li>Votre visage sur la photo doit être clair et reconnaissable.</li>
+                            <li>Les caractères sur la pièce d'identité doivent être clairs lisible .</li>  
+                            <li>La note doit être marquée comme ceci  « 8LABLY ».</li>
+                            <li>La note doit porter la mention « Date du jour » comme ceci  (jj-mm-aaaa).</li>
+                            <li>La note doit être marquée de votre signature.</li>
+                        </ul>
                     </div>
                     <div class="face-driver-lic form-group">
-                        <p>Photo recto</p>
-                        <div class="face-driver-block identity">
+                        <p>video visage+ permis*</p>
+                        <div class="face-driver-block">
                             <div class="face-driver-upload input-file">
                                 <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="face-driver-lic form-group">
-                        <p>Photo verso</p>
-                        <div class="face-driver-block identity">
-                            <div class="face-driver-upload input-file">
-                                <input type="file" id="in-driver-face"> <label class="add-input" for="in-driver-face">+</label>
+                            <div class="face-driver-exemple">
+                                <h6>Exemple</h6>
+                                <img src="images/exemple2.png" alt="">
                             </div>
                         </div>
+                        <p class="text-desc-video">
+                        Fournissez une vidéo de vous avec votre permis tenue en main (votre visage sur la pièce d'identité doit être clair et reconnaissable) et une note marquée « Date du jour », « 8LABLY » et « Signature »
+                        Dans la vidéo, veuillez lire le contenu suivant : « je soussigner (votre nom prénom) ,que mes document son légitime et que je suis prêt à assumer toutes les responsabilités légales correspondantes »
+                        </p>
                     </div>
                     
                 </div>
@@ -424,18 +492,28 @@
                 <h4>DOCUMENT PROFESSIONNELLE</h4>
                 <div class="form-content">
                     <div class="form-group w-32">
-                        <label for="">Nom de la societé*</label>
-                        <input type="text" placeholder="Nom de la societé*">
+                        <label for="">Type d'assurance*</label>
+                        <select name="" id="">
+                            <option value="sarl">tetris</option>
+                            <option value="sarl">generali</option>
+                            <option value="sarl">MMA</option>
+                            <option value="sarl">Autres</option>
+
+                        </select>
                     </div>
                     <div class="form-group w-32">
                         <label for="">Paque immatriculation *</label>
-                        <input type="text" placeholder="Paque immatriculation *">
+                        <input type="text" placeholder="immatriculation w-garage*">
                     </div>
                     <div class="form-group w-32">
                         <label for="">Statut de la societé*</label>
                         <select name="" id="">
                             <option value="Statut de la societé">Statut de la societé</option>
-                            <option value="sarl">sarl</option>
+                            <option value="sarl">SAS</option>
+                            <option value="sarl">SARL</option>
+                            <option value="sarl">EURL</option>
+                            <option value="sarl">EI</option>
+                            <option value="sarl">SASU</option>
                         </select>
                     </div>
                     <div class="face-driver-lic form-group">
@@ -474,6 +552,32 @@
                     <p class="text-doc-info">
                         Le certificat W garage autorise temporairement la circulation d'un véhicule avant son immatriculation permanente. Il est exclusivement attribué aux professionnels tels que les réparateurs, vendeurs, transporteurs, carrossiers, importateurs et constructeurs pour l'utilisation de certains modèles de véhicules. Sa validité est annuelle et nécessite un renouvellement chaque année civile.
                     </p>
+                    
+                </div>
+                <div class="btn-change-page">
+                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                </div>
+            </fieldset>
+            <fieldset class="d-none">
+                <h4>INFORMATION BANCAIRE</h4>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="">Numéro Iban*</label>
+                        <input type="text" placeholder="Saisissez iban">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Bic*</label>
+                        <input type="text" placeholder="Saisissez bic">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Nom du titulaire du compte*</label>
+                        <input type="text" placeholder="Saisissez le nom du titulaire du compte">
+                    </div>
+                    <div class="form-group w-full">
+                        <label for="">Rib</label>
+                        <input type="text" placeholder="Saisissez le rib">
+                    </div>
                     
                 </div>
                 <div class="btn-change-page">

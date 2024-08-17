@@ -649,6 +649,7 @@ p.foot-text{
     border-radius:4px;
     position: relative;
 }
+
 .input-address input, .input-address select{
     height:30px;
     border-radius:4px;
@@ -890,6 +891,12 @@ p.foot-text{
         width: 420px;
     }
 }
+@media screen and (max-width:1144px){
+    .form-2 .input-address{
+        width: unset;
+    }
+    
+}
 @media screen and (max-width: 1040px) {
     .devis-address.m-auto {
         width: 100%;
@@ -912,10 +919,18 @@ p.foot-text{
         display:flex;
         justify-content: space-between;
     }
-    .input-address.s{
+    .form-2 .input-address.s{
         margin-right: 0;
         margin-bottom:15px;
         width: 48%;
+    }
+    .form-2 .input-address{
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .form-2 .btn{
+        margin-bottom:15px;
     }
 }
 /*fin banner*/
@@ -1330,6 +1345,9 @@ p.foot-text{
     line-height:40px;
     border-radius: 15px;
 }
+.reserv-text{
+    text-align: center;
+}
 .car-image{
     display:block;
     margin:auto;
@@ -1403,7 +1421,7 @@ p.foot-text{
     accent-color:var(--lemon-color);
     width: 18px;
     height: 17px;
-}
+} 
 .reserv-box .btn{
     width:100%;
     text-align: center;
@@ -1421,7 +1439,7 @@ p.foot-text{
 }
 .text-part{
     text-align: center;
-    margin-bottom:160px;
+    margin-bottom:132px;
 }
 @media screen and (max-width:1205px) {
     .reserv-box{
@@ -1445,7 +1463,33 @@ p.foot-text{
    font-size:15px;
    color: white;
    font-weight: 800;
+}
+.diag-type-car{
+    padding: 0;
+    border: none;
+    border-radius: 21px;
+    position: fixed;
+    top: calc(100vh - 75%);
 
+}
+.diag-type-car .form-field-car{
+    max-width: unset;
+    width: 55%;
+}
+
+.diag-type-car .form-car-mission{
+    margin:unset;
+}
+@media screen and (max-width:1125px) {
+    .diag-type-car{
+        margin:25px;
+    }
+}
+@media screen and (max-width:450px) {
+    .diag-type-car .btn-change-page{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 .form-field-car{
     background: var(--blue-theme-color);
@@ -1467,6 +1511,7 @@ p.foot-text{
 }
 .title-logo img{
     width:84px;
+    height: 72px;
 }
 .form-client .title-logo img{
     width: 70px;
@@ -1521,6 +1566,9 @@ p.foot-text{
     justify-content: center;
     margin-top:auto;
 }
+.form-field-car .logo-form .logo{
+    border-bottom-left-radius: 21px;
+}
 .form-prog-finalize{
     font-family: Inter;
     font-size:20px;
@@ -1557,6 +1605,9 @@ p.foot-text{
     font-family: Arial,sans-serif;
     font-weight: 700;
 }
+.diag-type-car .form-transport{
+    width: unset;
+}
 .form-transport h4{
     font-size:33.37px;
     text-align: center;
@@ -1590,11 +1641,17 @@ p.foot-text{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.diag-type-car .form-content{
+    margin:auto 35px;
+}
 .form-group{
     display:flex;
     flex-direction:column;
     width: 47%;
-    margin-bottom:25px;
+    margin-bottom:5px;
+}
+.diag-type-car .form-group{
+    margin-bottom: 35px;
 }
 .w-full{
     width: 100%;
@@ -1683,7 +1740,7 @@ p.foot-text{
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 42px;
+    text-align: left;
 }
 .face-driver-block{
     display: flex;
@@ -1752,6 +1809,17 @@ p.foot-text{
     font-family: Arial;
     font-weight:700;
 }
+.diag-type-car .btn-change-page button{
+    background-color:var(--lemon-color);
+    width: 60%;
+    font-size: 15px;
+    font-family: Inter;
+    display:inline-block;
+    border-radius: 10px;
+}
+.diag-type-car img{
+    width: 100%;
+}
 .btn-change-page button img{
     height: 17px;
     vertical-align: middle;
@@ -1786,14 +1854,18 @@ p.foot-text{
     margin-left: 0px;
 }
 .insc-form.form-car-mission{
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 30px;
 }
 .insc-form.form-car-mission .title-logo{
     margin-left: 13px;
 }
-.insc-form.form-car-mission.form-client{
-    font-size: 14px;
-    line-height: 42px;
+.diag-type-car .insc-form.form-car-mission .title-logo{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 43px;
+    text-align: center;
 }
 .lang{
     display:flex;
@@ -1806,6 +1878,7 @@ p.foot-text{
     line-height: 22px;
     font-size: 16px;
     margin-bottom: 0;
+    text-align: center;
 }
 .form-content .text-doc-info{
     font-family: Inter;
@@ -1880,6 +1953,17 @@ p.foot-text{
     .list-order-inline li:first-of-type{
         margin-right: 15px;
     }
+    .diag-type-car .btn-change-page button{
+        width: auto;
+        font-size: 10px;
+    }
+    .diag-type-car .form-group{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    .diag-type-car .form-content {
+        margin: auto 10px;
+    }
 }
 .form-offer-finalize h4{
     font-size: 27px;
@@ -1898,7 +1982,7 @@ p.foot-text{
 .form-group-line input[type="checkbox"],.form-group-line input[type="radio"] {
     min-width: 22px;
     height: 23px;
-    vertical-align: middle;
+    align-self: center;
 }
 .form-group-line label{
     align-self: center;
