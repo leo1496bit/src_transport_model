@@ -125,8 +125,15 @@
                         <input type="text" placeholder="Nom du client de départ *">
                     </div>
                     <div class="form-group">
-                        <label for="">Type de lieu de départ *</label>
-                        <input type="text" placeholder="Type de lieu de départ *">
+                        <label for="">Type de lieu de départ*</label>
+                        <select name="" id="" >
+                            <option value="sarl">Particulier</option>
+                            <option value="sarl">Agence</option>
+                            <option value="sarl">Concession</option>
+                            <option value="sarl">Garage</option>
+                            <option value="sarl">Parc auto</option>
+                            <option value="sarl">Societé</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="">Numéro de téléphone *</label>
@@ -156,7 +163,14 @@
                     </div>
                     <div class="form-group">
                         <label for="">Type de lieu de d'arrivée *</label>
-                        <input type="text" placeholder="Type de lieu de d'arrivée *">
+                        <select name="" id="" >
+                            <option value="sarl">Particulier</option>
+                            <option value="sarl">Agence</option>
+                            <option value="sarl">Concession</option>
+                            <option value="sarl">Garage</option>
+                            <option value="sarl">Parc auto</option>
+                            <option value="sarl">Societé</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="">Numéro de téléphone *</label>
@@ -180,9 +194,13 @@
                         <label for="">Modèle et marque du véhicule *</label>
                         <input type="text" placeholder="Modèle et marque du véhicule *">
                     </div>
-                    <div class="form-group w-full">
+                    <div class="form-group">
                         <label for="">Plaque d'immatriculation *</label>
                         <input type="text" placeholder="Plaque d'immatriculation *">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Châssis du véhicule *</label>
+                        <input type="text" placeholder="Châssis du véhicule *">
                     </div>
                 </div>
                 <div class="btn-change-page">
@@ -196,11 +214,11 @@
                 <div class="form-content">
                     <div class="form-group w-full">
                         <label for="">Disponibilité du vehicule à partir du *</label>
-                        <input type="text" placeholder="Disponibilité du vehicule à partir du *">
+                        <input type="date" placeholder="Disponibilité du vehicule à partir du *">
                     </div>
                     <div class="form-group w-full">
                         <label for="">Livraison au plus tard le *</label>
-                        <input type="text" placeholder="Livraison au plus tard le *">
+                        <input type="date" placeholder="Livraison au plus tard le *">
                     </div>
                 </div>
                 <div class="btn-change-page">
@@ -222,17 +240,17 @@
                     </div>
                     <div class="form-group w-full">
                         <label for="">Nom societé donneur d'ordre *</label>
-                        <textarea name="" id="" placeholder="Nom societé donneur d'ordre *"></textarea>
+                        <input type="text" placeholder="Nom societé donneur d'ordre *">
                     </div>
                     
                     <div class="form-group w-full">
                         <label for="">Instruction du client *</label>
-                        <textarea name="" id="" placeholder="Instruction du client *"></textarea>    
+                        <textarea name="" id="" placeholder="veuillez donner des consignes pour le client "></textarea>    
                     </div>
                 </div>
                 <div class="btn-change-page">
                     <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" class="next-btn" onclick="changeToPay(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>

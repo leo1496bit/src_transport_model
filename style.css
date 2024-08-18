@@ -253,6 +253,9 @@ nav{
 .d-none{
     display: none!important;
 }
+.d-show{
+    display:block!important;
+}
 .chat{
     width: 530px;
     position: fixed;
@@ -1261,6 +1264,7 @@ p.foot-text{
     position: fixed;
     right: 0;
     bottom:0;
+    z-index: 2;
 }
 .chatbox img{
     width: 85px;
@@ -1303,8 +1307,8 @@ p.foot-text{
     .contact-message p{
         font-size: 10px;
     }
-    .chatbox{
-        right: -8%;
+    .chatbox img{
+        width:65px;
     }
 }
 .banner-form{
@@ -1899,6 +1903,10 @@ p.foot-text{
     .title-logo p{
         display:none;
     }
+    .diag-type-car .title-logo p{
+        display:flex;
+        font-size: 25px;
+    }
     .logo-form .logo{
         max-width: 100%;
     }
@@ -1964,6 +1972,20 @@ p.foot-text{
     .diag-type-car .form-content {
         margin: auto 10px;
     }
+    .diag-type-car .form-car-mission{
+        height:60vh
+    }
+    .diag-type-car{
+        top:15%;
+        margin:15px;
+    }
+    .diag-type-car .form-progress-group{
+        margin:auto;
+    }
+    .diag-type-car .form-field-car, .diag-type-car .form-transport{
+        width: 50%;
+    }
+
 }
 .form-offer-finalize h4{
     font-size: 27px;
@@ -2828,7 +2850,7 @@ p.foot-text{
 }
 @media screen and (max-width:470px) {
     .comment-block{
-        width: 400px;
+        width: 390px;
     }
     .comment-bar-inf{
         width: 350px;
