@@ -596,7 +596,7 @@ p.foot-text{
     font-weight: 700;
 }
 .banner{
-    background:url("images/banner.jpg") no-repeat;
+    background:url("images/tour-eiffel-paris-dans-la-nuit.jpg") no-repeat;
     background-size:cover ;
     background-position: center;
     min-height:457px ;
@@ -647,7 +647,7 @@ p.foot-text{
 .input-address{
     display:inline-block;
     margin-right: 35px;
-    width: 190px;
+    width: 270px;
     background-color: white;
     border-radius:4px;
     position: relative;
@@ -1261,10 +1261,24 @@ p.foot-text{
 .chatbox{
     border:none;
     background:transparent;
+}
+.chatbox-block{
     position: fixed;
     right: 0;
-    bottom:0;
+    bottom: 0;
     z-index: 2;
+}
+.chat-text{
+    position:absolute;
+    right: 87px;
+    bottom: 30px;
+    width: 105px;
+    background-color: var(--lemon-color);
+    min-height: 28px;
+    border-radius: 15px;
+    text-align:center;
+    line-height: 28px;
+    color:black;
 }
 .chatbox img{
     width: 85px;
@@ -1310,6 +1324,11 @@ p.foot-text{
     .chatbox img{
         width:65px;
     }
+    .chat-text{
+        right: 72px;
+        bottom:20px;
+    }
+
 }
 .banner-form{
     display: flex;
