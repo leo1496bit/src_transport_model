@@ -761,7 +761,7 @@ p.foot-text{
 .banner-sunset .car-banner.car5{
     width:600px;
     right: 0%;
-    bottom: 0%;
+    bottom: -11%;
 }
 .banner-description{
     color:white;
@@ -880,18 +880,19 @@ p.foot-text{
     }
     .car-banner{
         right:0%;
-        bottom:-20%;
+        bottom:-13%;
+        width: 396px;
     }
     .input-address input{
         width: 75%;;
     }
     .banner-sunset .car-banner{
-        bottom:2%;
+        bottom:-8%;
         right: 0%;
     }
     .banner-sunset .car-banner.car5{
         right:0;
-        width: 420px;
+        width: 406px;
     }
 }
 @media screen and (max-width:1144px){
