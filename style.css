@@ -145,7 +145,7 @@ nav{
     .btn{
         font-size: 1em;
     }
-    header .btn{
+    header>a{
         margin:10px;
         align-self: center;
     }
