@@ -2889,8 +2889,8 @@ p.foot-text{
     position: relative;
 }
 .driver1 img{
-    width: 545.89px;
-    height:506px;
+    width: 577.89px;
+    height:466px;
 }
 .text-desc-x{
     height:95.68px ;
@@ -2898,7 +2898,7 @@ p.foot-text{
     background-color:var(--lemon-color);
     transform: rotate(-90deg);
     position: absolute;
-    top:50.3%;
+    top:46.3%;
     left: -193px;
     display:flex;
     justify-content: center;
@@ -2941,7 +2941,6 @@ p.foot-text{
     float: left;
 }
 .partner-btn{
-    margin-top: auto;
     display:flex;
     justify-content: space-between;
     border-top: solid rgba(2, 0, 0, 0.5) 1px;
@@ -2964,10 +2963,20 @@ p.foot-text{
         width: 49%;
     }
     .driver1 img{
-        width: 461px;
+        width: 497px;
+        height: 396px;
+    }
+    .partneriat-info>a{
+        align-self: center;
+    }
+    .text-desc-x{
+        top:46.3%;
+        height: 78.68px;
+        width: 344px;
+        left: -169px;
     }
 }
-@media screen and (max-width:1068px){
+@media screen and (max-width:1158px){
     .partneriat-info{
         flex-direction: column;
         margin:15px;
@@ -2976,14 +2985,14 @@ p.foot-text{
     }
     .driver1 img{
         width: 100%;
-        min-height:326px;
+        min-height:265px;
         height:max-content ;
     }
     .text-desc-x{
         height: 49.68px;
-        width: 261px;
-        top: 52.3%;
-        left: -124px;
+        width: 225px;
+        top: 48.0%;
+        left: -110px;
         font-size: 15px;
     }
     .driver1{
@@ -3020,6 +3029,7 @@ p.foot-text{
 @media screen and (min-width: 1365px) {
     .flash-inf{
         margin:auto;
+        margin-top: 80px;
     }
 }
 .flash-inf-item{
@@ -3028,7 +3038,7 @@ p.foot-text{
     position: relative;
     padding-top:18px;
     background: rgba(245, 243, 243, 1);
-    margin-bottom:60px;
+    margin-bottom:75px;
 }
 .item-blue{
    background-color: var(--blue-theme-color); 
