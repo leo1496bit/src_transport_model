@@ -6,6 +6,10 @@ let fieldset = document.querySelectorAll(".form-transport fieldset");
              fieldset.item(indCurrent).classList.add("d-none");
              fieldset.item(indCurrent+n).classList.remove("d-none");
              formProgress.item(indCurrent).classList.remove("active");
+             if(n===1)
+               formProgress.item(indCurrent).classList.add('fill');
+             else
+               formProgress.item(indCurrent+n).classList.remove('fill');
              formProgress.item(indCurrent+n).classList.add("active");
              document.querySelector(".form-progress-group").classList.remove("d-none");
              document.querySelector(".form-progress-group").classList.add("d-show");
