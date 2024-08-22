@@ -3005,7 +3005,7 @@ p.foot-text{
     .driver1 img{
         width: 100%;
         min-height:265px;
-        height:max-content ;
+        height:unset ;
     }
     .text-desc-x{
         height: 49.68px;
