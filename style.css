@@ -136,6 +136,7 @@ nav{
     .logo{
         max-width: 30%;
          height: auto; 
+         
     }
     header{
         justify-content: space-around;
@@ -143,7 +144,7 @@ nav{
         background: rgba(26, 34, 46, 1);
     }
     .btn{
-        font-size: 1em;
+        font-size: 0.9em;
     }
     header>a{
         margin:10px;
@@ -1284,15 +1285,17 @@ p.foot-text{
 }
 .chat-text{
     position:absolute;
-    right: 87px;
+    right: 96px;
     bottom: 30px;
     width: 105px;
-    background-color: var(--lemon-color);
+    background-color: papayawhip;
     min-height: 28px;
     border-radius: 15px;
     text-align:center;
     line-height: 28px;
     color:black;
+    font-weight: 500;
+    font-family: monospace;
 }
 .chatbox img{
     width: 85px;
@@ -2774,7 +2777,8 @@ p.foot-text{
 }
 .opinion{
     min-height: 642px;
-    background:url(images/background-opinion.jpeg);
+    background:url("images/empty-road-dark-atmosphere.jpg");
+    background-size:contain;
     font-family:Exo;
 }
 .opinion-title{
