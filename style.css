@@ -610,7 +610,7 @@ p.foot-text{
     background-position: center;
 }
 .banner-sunset{
-    background:url("images/effel_sunset.jpeg") no-repeat;
+    background:url("images/freepik-export-20240824185748ZOjK.jpeg.jpg") no-repeat;
     background-size:cover ;
     background-position: center;
 }
@@ -677,7 +677,8 @@ p.foot-text{
 }
 .input-address input{
     width: 80%;
-    margin-left: 30px;
+    margin-left: 35px;
+    font-size: 18px;
 }
 .input-address select{
     width: 100%;
@@ -1287,15 +1288,16 @@ p.foot-text{
     position:absolute;
     right: 96px;
     bottom: 30px;
-    width: 105px;
-    background-color: papayawhip;
+    width: 140px;
+    background-color: var(--blue-theme-color);
     min-height: 28px;
     border-radius: 15px;
     text-align:center;
-    line-height: 28px;
-    color:black;
-    font-weight: 500;
-    font-family: monospace;
+    line-height: 40px;
+    color:var(--lemon-color);
+    font-family: Roboto;
+    height: 40px;
+    font-weight: 600;
 }
 .chatbox img{
     width: 85px;
@@ -1628,10 +1630,10 @@ p.foot-text{
 .form-prog-finalize p:first-of-type{
     text-align: center;
     font-family: Arial;
-    font-size:48px;
-    color:var(--lemon-color);
+    font-size:45px;
+    color:white;
     text-decoration:underline;
-    margin:0;
+    margin:0
 }
 .form-prog-finalize h5{
     margin-left: 25px;
@@ -2367,10 +2369,12 @@ p.foot-text{
     font-size: 23px;
     font-weight: 600;
     text-decoration: underline;
+    color:#46525E;
 }
 .inf-assurance-item p{
     margin:0;
     text-decoration: underline;
+    color:#46525E;
 }
 .rect-gray-assur{
     width:109px;
@@ -2397,6 +2401,7 @@ p.foot-text{
     font-weight: 600;
     top:-9px;
     left: -19px;
+    color:#46525E;
 }
 .rect-bar-vert-1, .rect-bar-vert-2, .rect-bar-hor{
     width: 3px;
