@@ -1726,6 +1726,9 @@ p.foot-text{
         font-family: monospace;
         max-width: 42px;
     }
+    .form-progress-group-horiz .form-progress-element p:before{
+        left:24%;
+    }
 }
 .form-transport{
     width: 100%;
