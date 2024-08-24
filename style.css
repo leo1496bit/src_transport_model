@@ -1644,7 +1644,88 @@ p.foot-text{
 .form-prog-finalize li::marker{
     height: 25px;
 }
-
+.form-progress-group-horiz{
+    display: flex;
+    margin:25px;
+    background-color: var(--blue-theme-color);
+    color: white;
+    padding-top: 15px;
+}
+.form-progress-group-horiz .form-progress-element{
+    margin-left: 0;
+    border-left: none;
+}
+.form-progress-group-horiz .form-progress-element p{
+    padding-left: 0;
+    font-size: 12px;
+    padding-top:20px;
+    text-align: center;
+}
+.form-progress-group-horiz .circle, .form-progress-group-horiz .circle-select{
+    left: -2px;
+    top:-12px;
+}
+.form-progress-group-horiz .circle-select{
+    left:-10px;
+    top:-19px;
+}
+.form-progress-group-horiz .border-none{
+    border:none;
+}
+.form-progress-group-horiz .form-progress-element p:before {
+    content: "";
+    width: 24px;
+    height: 22px;
+    background-color: var(--lemon-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 39%;
+    top:-4px;
+}
+.form-progress-group-horiz .form-progress-element p:after{
+    position: absolute;
+    left: 50%;
+    width: calc(100% + 20px);
+    content: '';
+    height: 4px;
+    background: var(--lemon-color);
+    margin: 0;
+    top:6px
+}
+.form-progress-group-horiz .form-progress-element.border-none p:after{
+    content:none;
+}
+.form-progress-group-horiz .form-progress-element.xax p:after{
+    width: 80%;
+}
+.form-progress-group-horiz .form-progress-element.ele-active p:after,
+ .form-progress-group-horiz .form-progress-element.ele-inactive p:before{
+    background-color: gray;
+}
+.form-progress-group-horiz .form-progress-element.ele-active p:before{
+    background-color: white;
+    z-index: 1;
+}
+@media screen and (max-width:780px) {
+    .form-progress-group-horiz{
+        margin:25px 5px;
+    }
+    .form-progress-group-horiz .form-progress-element p {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:600px) {
+    .form-progress-group-horiz .form-progress-element p:before{
+        width: 16px;
+        height: 15px;
+        top:0;
+    }
+    .form-progress-group-horiz .form-progress-element p {
+        font-size: 6px;
+        font-family: system-ui;
+    }
+}
 .form-transport{
     width: 100%;
     color:var(--blue-theme-color);

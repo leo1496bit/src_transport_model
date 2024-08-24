@@ -194,7 +194,7 @@
                     </div>
                     <div class="form-group">
                         <label for="">Marque du véhicule *</label>
-                        <select name="" id="" >
+                        <select name="" id="" autocomplete="on" >
                             <option value="sarl">BMW</option>
                             <option value="sarl">Renauld</option>
                             <option value="sarl">Audi</option>
@@ -261,6 +261,29 @@
                
             </fieldset>
             <fieldset class="form-offer-finalize d-none">
+                <div class="form-progress-group-horiz">
+                    <div class="form-progress-element active">
+                        <p>Adresse de départ</p> 
+                    </div>
+                    <div class="form-progress-element">
+                         <p>Adresse de livraison</p> 
+                    </div>
+                    <div class="form-progress-element">
+                       <p>Informations du véhicule</p> 
+                    </div>
+                    <div class="form-progress-element">
+                         <p>Plage horaire du véhicule</p> 
+                    </div>
+                    <div class="form-progress-element">
+                         <p>Informations du client</p> 
+                    </div>
+                    <div class="form-progress-element xax ele-active">
+                         <p>Prestations supplémentaires</p> 
+                    </div>
+                    <div class="form-progress-element border-none ele-inactive">
+                        <p>Paiement</p> 
+                   </div>
+                </div>
                 <h4>Sélectionner votre prestation supplémentaires</h4>
                 <div class="m-35">
                     <div class="form-group-line">
@@ -286,11 +309,34 @@
                 </div>
                 <div class="btn-change-page">
                     <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
-                    <button type="button" class="next-btn" onclick="change(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
+                    <button type="button" class="next-btn"  onclick="changeToPay(1)">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
             </fieldset>
             <fieldset class="form-offer-finalize pay-form d-none">
+                <div class="form-progress-group-horiz">
+                    <div class="form-progress-element active">
+                        <p>Adresse de départ</p> 
+                    </div>
+                    <div class="form-progress-element">
+                         <p>Adresse de livraison</p> 
+                    </div>
+                    <div class="form-progress-element">
+                       <p>Informations du véhicule</p> 
+                    </div>
+                    <div class="form-progress-element">
+                         <p>Plage horaire du véhicule</p> 
+                    </div>
+                    <div class="form-progress-element">
+                         <p>Informations du client</p> 
+                    </div>
+                    <div class="form-progress-element xax">
+                         <p>Prestations supplémentaires</p> 
+                    </div>
+                    <div class="form-progress-element border-none ele-active">
+                        <p>Paiement</p> 
+                   </div>
+                </div>
                 <div class="card-logo-list">
                     <img src="images/mastercard.png" alt="">
                     <img src="images/gpay.png" alt="">
@@ -344,7 +390,7 @@
                     </div>
                 </div>
                 <div class="btn-change-page">
-                    <button type="button" onclick="change(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
+                    <button type="button" onclick="changeToPay(-1)"><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
                     <button type="button" class="next-btn">Suivant <img src="images/next-white.png" alt="" class="ml-14"> </button>
                 </div>
                
