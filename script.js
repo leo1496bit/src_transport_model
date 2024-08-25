@@ -22,3 +22,6 @@ let fieldset = document.querySelectorAll(".form-transport fieldset");
           document.querySelector(".form-progress-group").classList.add("d-none");
           formProgFinalize.classList.add("d-show");
         }
+        function closeModal(){
+          document.querySelector(".diag-type-car").closeModal();
+        }

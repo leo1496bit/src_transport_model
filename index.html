@@ -128,6 +128,7 @@
                             <div class="btn-change-page">
                                 <button class="btn btn-yellow"> Obtenir Mon Tarif</button>
                             </div>
+                            <div class="close" onclick="closeModal()">X</div>
                         </fieldset>
                     </form>
                   </div> 
@@ -399,7 +400,9 @@ dapibus. Vivamus magna justo, lacin, convallis at tellus.”
         event.preventDefault();
         document.querySelector(".diag-type-car").showModal();
     })
-
+    function closeModal(){
+          document.querySelector(".diag-type-car").close();
+        }
 </script>
 
 </div>
