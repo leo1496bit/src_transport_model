@@ -664,7 +664,7 @@ p.foot-text{
 
 
 .input-address input, .input-address select{
-    height:88%;
+    height:55px;
     border-radius:4px;
     border:none;
     outline:none;
@@ -1344,7 +1344,7 @@ p.foot-text{
         width:65px;
     }
     .chat-text{
-        right: 72px;
+        right: 77px;
         bottom:20px;
     }
 
