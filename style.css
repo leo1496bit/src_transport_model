@@ -671,6 +671,7 @@ p.foot-text{
 }
 .input-address select{
     height: 30px;
+    color:black;
 }
 .input-address.veh-select{
     margin-left:35px;
@@ -679,6 +680,7 @@ p.foot-text{
     width: 80%;
     margin-left: 35px;
     font-size: 18px;
+    padding:0;
 }
 .input-address select{
     width: 100%;
