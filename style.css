@@ -664,7 +664,7 @@ p.foot-text{
 
 
 .input-address input, .input-address select{
-    height:80%;
+    height:91%;
     border-radius:4px;
     border:none;
     outline:none;
@@ -1817,6 +1817,9 @@ p.foot-text{
     width: 95%;
 
 }
+.form-group select{
+    color:black;
+}
 .form-group .input-file{
     border: 1px dashed rgba(0, 0, 0, 0.4);
     display: flex;
@@ -2126,6 +2129,10 @@ p.foot-text{
     }
     .diag-type-car .form-field-car, .diag-type-car .form-transport{
         width: 50%;
+    }
+    .close{
+        right: 9px;
+        top:-5px;
     }
 
 }
