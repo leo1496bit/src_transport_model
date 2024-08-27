@@ -141,6 +141,40 @@
                         <label for="">E-mail client départ *</label>
                         <input type="text" placeholder="E-mail client départ *">
                     </div>
+                    <div class="form-group-line w-full">
+                        <label class="switch">
+                            <input type="checkbox" id="getvehicule">
+                            <span class="slider round"></span>
+                        </label>
+                        <label for=""> Récupération du véhicule </label>
+                    </div>
+                    <div class="form-group d-none">
+                        <label for="">Adresse de départ *</label>
+                        <input type="text" placeholder="Adresse de départ *">
+                    </div>
+                    <div class="form-group d-none">
+                        <label for="">Nom du client de départ *</label>
+                        <input type="text" placeholder="Nom du client de départ *">
+                    </div>
+                    <div class="form-group d-none">
+                        <label for="">Type de lieu de départ*</label>
+                        <select name="" id="" >
+                            <option value="sarl">Particulier</option>
+                            <option value="sarl">Agence</option>
+                            <option value="sarl">Concession</option>
+                            <option value="sarl">Garage</option>
+                            <option value="sarl">Parc auto</option>
+                            <option value="sarl">Societé</option>
+                        </select>
+                    </div>
+                    <div class="form-group d-none">
+                        <label for="">Numéro de téléphone *</label>
+                        <input type="text" placeholder="Numéro de téléphone *">
+                    </div>
+                    <div class="form-group w-full d-none">
+                        <label for="">E-mail client départ *</label>
+                        <input type="text" placeholder="E-mail client départ *">
+                    </div>
                 </div>
                 <div class="btn-change-page">
                     <button type="button" ><img src="images/backArrow.png" alt="" class="mr-14"> Précédent </button>
@@ -423,6 +457,12 @@
       </div>  
     </div>
     <script src="script.js"></script>
+    <script>
+        var toogleGetVehicle = document.querySelector("#getvehicule");
+       toogleGetVehicle.addEventListener("click", (event)=>{
+        document.querySelectorAll(".form-group-line:has(#getvehicule) ~ .form-group").forEach(it=> it.classList.toggle("d-none"))
+       })
+    </script>
     <footer>
         <h5 class="foot-title"> <img src="images/anonym.png" alt="" width="68"> Nos driver partner couvrent l'ensemble des régions de France,</h5>
         <h4 class="d-number">+97</h4>

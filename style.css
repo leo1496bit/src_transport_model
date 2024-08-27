@@ -824,7 +824,7 @@ p.foot-text{
 }
 .banner-more-text{
     background-color: var(--lemon-color);
-    border-radius: 0;
+    border-radius: 4px;
     width: 170px;
     display: block;
     cursor: pointer;
@@ -1792,7 +1792,7 @@ p.foot-text{
     display:flex;
     flex-direction:column;
     width: 47%;
-    margin-bottom:5px;
+    margin-bottom:4px;
 }
 .diag-type-car .form-group{
     margin-bottom: 35px;
@@ -3491,7 +3491,8 @@ p.foot-text{
     .connect-page{
         margin:0;
         height: 98vh;
-        background: url("images/hand-car.png");
+        background: url("images/hand-car.png") no-repeat;
+        background-position: center;
     }
     .main:has(.connect-page) ~ footer{
         display:none;
