@@ -3490,7 +3490,7 @@ p.foot-text{
 @media screen and (max-width:460px){
     .connect-page{
         margin:0;
-        height: 98vh;
+        height: calc(100vh - 100px);
         background: url("images/hand-car.png") no-repeat;
         background-position: center;
     }
