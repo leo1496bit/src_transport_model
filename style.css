@@ -1160,7 +1160,8 @@ p.foot-text{
     padding:0 5%;
     margin:auto;
     align-items: center;
-    background-color: var(--blue-theme-color);
+    background: url("images/footer-stat.jpg");
+    background-size: contain;
     font-family: Lato;
 }
 .stat-item{
@@ -3191,13 +3192,13 @@ p.foot-text{
     margin-bottom:90px;
     transition:background-color 1s ease-in;
 }
-.flash-inf-item:hover{
+.flash-inf-item:hover, .flash-inf-item:focus{
     background-color: var(--blue-theme-color);
 }
-.flash-inf-item:hover p{
+.flash-inf-item:hover p, .flash-inf-item:focus p{
     color:white;
 }
-.flash-inf-item:hover h6{
+.flash-inf-item:hover h6, .flash-inf-item:focus h6{
     color:var(--lemon-color);
 }
 
