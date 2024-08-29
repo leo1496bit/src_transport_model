@@ -1169,12 +1169,69 @@ p.foot-text{
     border-right: 0.75px solid rgba(204, 204, 204, 0.2);
     padding:0 10px;
 }
+@property --num{
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
 .stat-item h5{
     font-family: Titillium Web;
     font-size: 63px;
     margin:0;
     color:white;
     line-height: 63px;
+    counter-reset: num var(--num);
+    animation: counter 5s infinite alternate ease-in-out;
+}
+.stat-item h5.stat2{
+    animation: counter2 5s infinite alternate ease-in-out;
+}
+.stat-item h5.stat2::before{
+    content:"0"counter(num);
+}
+.stat-item h5::before{
+    content:counter(num);
+}
+.stat-item h5.stat3{
+    animation: counter3 5s infinite alternate ease-in-out;
+}
+.stat-item h5.stat4{
+    animation: counter4 5s infinite alternate ease-in-out;
+}
+.stat-item h5.stat4::before{
+    content:"€"counter(num);
+}
+@keyframes counter{
+    from{
+       --num:0
+    }
+    to{
+        --num: 1200
+    }
+}
+@keyframes counter2{
+    from{
+       --num:0
+    }
+    to{
+        --num: 5
+    }
+}
+@keyframes counter3{
+    from{
+       --num:0
+    }
+    to{
+        --num: 98
+    }
+}
+@keyframes counter4{
+    from{
+       --num:0
+    }
+    to{
+        --num: 12000
+    }
 }
 .stat-item h5 span{
     color:var(--lemon-color);
