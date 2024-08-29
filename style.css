@@ -3192,13 +3192,13 @@ p.foot-text{
     margin-bottom:90px;
     transition:background-color 1s ease-in;
 }
-.flash-inf-item:hover, .flash-inf-item:focus{
+.flash-inf-item:hover, .flash-inf-item:target{
     background-color: var(--blue-theme-color);
 }
-.flash-inf-item:hover p, .flash-inf-item:focus p{
+.flash-inf-item:hover p, .flash-inf-item:target p{
     color:white;
 }
-.flash-inf-item:hover h6, .flash-inf-item:focus h6{
+.flash-inf-item:hover h6, .flash-inf-item:target h6{
     color:var(--lemon-color);
 }
 
