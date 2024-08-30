@@ -1171,9 +1171,25 @@ p.foot-text{
 }
 @property --num{
     syntax: "<integer>";
-    initial-value: 0;
+    initial-value: 1200;
     inherits: false;
 }
+@property --num2{
+    syntax: "<integer>";
+    initial-value: 5;
+    inherits: false;
+}
+@property --num3{
+    syntax: "<integer>";
+    initial-value: 98 ;
+    inherits: false;
+}
+@property --num4{
+    syntax: "<integer>";
+    initial-value: 120000;
+    inherits: false;
+}
+
 .stat-item h5{
     font-family: Titillium Web;
     font-size: 63px;
@@ -1181,29 +1197,44 @@ p.foot-text{
     color:white;
     line-height: 63px;
     counter-reset: num var(--num);
-    animation: counter 5s infinite alternate ease-in-out;
+    animation: counter 5s normal ease-in-out;
+    -webkit-animation: counter 5s normal ease-in-out;
+    -moz-animation: counter 5s normal ease-in-out;
 }
 .stat-item h5.stat2{
-    animation: counter2 5s infinite alternate ease-in-out;
+    animation: counter2 5s normal ease-in-out;
+    -webkit-animation: counter2 5s normal ease-in-out;
+    -moz-animation: counter2 5s normal ease-in-out;
+    counter-reset: num2 var(--num2);
 }
 .stat-item h5.stat2::before{
-    content:"0"counter(num);
+    content:"0"counter(num2);
 }
 .stat-item h5::before{
     content:counter(num);
 }
 .stat-item h5.stat3{
-    animation: counter3 5s infinite alternate ease-in-out;
+    animation: counter3 5s normal ease-in-out;
+    -webkit-animation: counter3 5s normal ease-in-out;
+    -moz-animation: counter3 5s normal ease-in-out;
+    counter-reset: num3 var(--num3);
+}
+.stat-item h5.stat3::before{
+    content:counter(num3);
 }
 .stat-item h5.stat4{
-    animation: counter4 5s infinite alternate ease-in-out;
+    animation: counter4 5s normal ease-in-out;
+    -webkit-animation: counter4 5s normal ease-in-out;
+    -moz-animation: counter4 5s normal ease-in-out;;
+    counter-reset: num4 var(--num4);
 }
 .stat-item h5.stat4::before{
-    content:"€"counter(num);
+    content:"€"counter(num4);
 }
+
 @keyframes counter{
     from{
-       --num:0
+       --num:0 
     }
     to{
         --num: 1200
@@ -1211,26 +1242,59 @@ p.foot-text{
 }
 @keyframes counter2{
     from{
-       --num:0
+       --num2:0
     }
     to{
-        --num: 5
+        --num2: 5
     }
 }
 @keyframes counter3{
     from{
-       --num:0
+       --num3:0
     }
     to{
-        --num: 98
+        --num3: 98
     }
 }
 @keyframes counter4{
     from{
-       --num:0
+       --num4:0
     }
     to{
-        --num: 12000
+        --num4: 120000
+    }
+}
+
+@-webkit-keyframes counter{
+    from{
+        --num:0 
+     }
+     to{
+         --num: 1200
+     }
+}
+@-webkit-keyframes counter2{
+    from{
+       --num2:0
+    }
+    to{
+        --num2: 5
+    }
+}
+@-webkit-keyframes counter3{
+    from{
+       --num3:0
+    }
+    to{
+        --num3: 98
+    }
+}
+@-webkit-keyframes counter4{
+    from{
+       --num4:0
+    }
+    to{
+        --num4: 120000
     }
 }
 .stat-item h5 span{

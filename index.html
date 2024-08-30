@@ -403,6 +403,21 @@ dapibus. Vivamus magna justo, lacin, convallis at tellus.”
     function closeModal(){
           document.querySelector(".diag-type-car").close();
         }
+    let options ={
+        rootMargin: "0px",
+        threshold:0.5,
+    }
+    let observer = new IntersectionObserver((entries, observer)=>{
+        document.querySelectorAll(".stat-item h5").forEach((it,key)=>{
+            document.querySelector(`.stat${key+1}`).style.animationIterationCount = "infinite"
+            setTimeout(()=> document.querySelector(`.stat${key+1}`).style.animationIterationCount = 1,5000)
+
+//            it.classList.remove(`stat${key+1}`)
+ //           it.classList.add(`stat${key+1}`);
+        })
+    },options)
+    let target = document.querySelector(".stats");
+    observer.observe(target);
 </script>
 
 </div>
