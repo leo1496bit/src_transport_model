@@ -1003,6 +1003,12 @@ p.foot-text{
     justify-content: space-around;
     max-width:var(--max-width-main);
     margin:auto;
+    margin-top:25px;
+}
+.service-type-block > h3, .step-delivery-block>h3 {
+    font-family: Inter;
+    font-size: 40px;
+    text-align: center;
 }
 .image-item{
     width: var(--width-some-image);
@@ -1290,6 +1296,38 @@ p.foot-text{
     }
 }
 @-webkit-keyframes counter4{
+    from{
+       --num4:0
+    }
+    to{
+        --num4: 120000
+    }
+}
+@-moz-keyframes counter{
+    from{
+        --num:0 
+     }
+     to{
+         --num: 1200
+     }
+}
+@-moz-keyframes counter2{
+    from{
+       --num2:0
+    }
+    to{
+        --num2: 5
+    }
+}
+@-moz-keyframes counter3{
+    from{
+       --num3:0
+    }
+    to{
+        --num3: 98
+    }
+}
+@-moz-keyframes counter4{
     from{
        --num4:0
     }
@@ -1695,6 +1733,9 @@ p.foot-text{
     width:84px;
     height: 72px;
 }
+.form-container{
+    display: flex;
+}
 .form-client .title-logo img{
     width: 70px;
     height:70px;
@@ -1908,6 +1949,65 @@ p.foot-text{
     flex-direction:column;
     position: relative;
 }
+.recap-form img{
+    width: 100%;
+    border-radius: 9px;
+}
+.recap-form{
+    border-radius: 9px;
+    line-height: 14.76px;
+    font-family: Lato;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(235, 238, 22, 0.15);
+    margin:50px 10px 25px 25px;
+    min-width: 226px;
+    max-width: 258px;
+}
+.recap-form>h5{
+    font-weight: 700;
+    text-align: center;
+    color:rgba(0, 0, 0, 1);
+}
+.recap-form .price-recap{
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 14.76px;
+    text-align: center;
+    margin-bottom: 18px;
+    border:none;
+}
+.recap-form h4{
+    border-radius: 11px;
+    background: rgba(0, 26, 51, 1);
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    padding:7px;
+    margin:8px 0;
+    font-size:13.12px ;
+}
+.recap-form h6{
+    font-weight: 700;
+    font-size:15px;
+    margin:5px 0;
+    text-align: center;
+}
+.recap-form p{
+    margin:8px 0;
+    text-align: center;
+}
+.recap-form>div{
+    border-bottom: rgba(0,0,0,0.2) solid 1px;
+}
+.recap-form .dd1x h6, .recap-form .dd1x p{
+    margin-left: 7px;
+    text-align: left;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
 .close{
     font-size: 11px;
     cursor:pointer;
@@ -1952,7 +2052,7 @@ p.foot-text{
     border:none;
     padding-left:5%;
     border-radius:5px;
-    width: 95%;
+    /* width: 95%; */
 
 }
 .form-group select{
@@ -2320,7 +2420,7 @@ p.foot-text{
 .card-logo-list{
     display:flex;
     margin-bottom:15px;
-    margin:35px;
+    margin:15px;
     justify-content: space-between;
 }
 .card-logo-list img{
@@ -2677,7 +2777,7 @@ p.foot-text{
         left:auto;
         top:-28px;
     }
-    .inf-assurance h4{
+    .inf-assurance h4, .service-type-block>h3, .step-delivery-block>h3{
         font-size: 24px;
     }
     .inf-assurance img{
