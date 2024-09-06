@@ -1898,21 +1898,7 @@ p.foot-text{
         font-size: 9px;
     }
 }
-@media screen and (max-width:600px) {
-    .form-progress-group-horiz .form-progress-element p:before{
-        width: 16px;
-        height: 15px;
-        top:0;
-    }
-    .form-progress-group-horiz .form-progress-element p {
-        font-size: 5px;
-        font-family: monospace;
-        max-width: 42px;
-    }
-    .form-progress-group-horiz .form-progress-element p:before{
-        left:24%;
-    }
-}
+
 .form-transport{
     width: 100%;
     color:var(--blue-theme-color);
@@ -1963,6 +1949,7 @@ p.foot-text{
     margin:50px 10px 25px 25px;
     min-width: 226px;
     max-width: 258px;
+    display: none;
 }
 .recap-form>h5{
     font-weight: 700;
@@ -2005,6 +1992,15 @@ p.foot-text{
     margin-left: 7px;
     text-align: left;
 }
+@media screen and (max-width:1065px) {
+    .form-offer-finalize.pay-form .card-logo-list img{
+        width: 56px;
+    }
+    .form-offer-finalize.pay-form .form-progress-group-horiz .form-progress-element p{
+        font-size: 9px;
+    } 
+}
+
 .mb-10{
     margin-bottom: 10px;
 }
@@ -2373,7 +2369,25 @@ p.foot-text{
         top:-5px;
         font-family:sans-serif ;
     }
+    .form-container{
+        overflow-x:scroll;
+    }
 
+}
+@media screen and (max-width:600px) {
+    .form-progress-group-horiz .form-progress-element p:before{
+        width: 16px;
+        height: 15px;
+        top:0;
+    }
+    .form-offer-finalize .form-progress-group-horiz .form-progress-element p, .form-offer-finalize.pay-form .form-progress-group-horiz .form-progress-element p{
+        font-size: 5px;
+        font-family: monospace;
+        max-width: 42px;
+    }
+    .form-progress-group-horiz .form-progress-element p:before{
+        left:24%;
+    }
 }
 .form-offer-finalize h4{
     font-size: 27px;
@@ -2497,7 +2511,7 @@ p.foot-text{
     border-radius: 0 0 15px 15px;
 }
 @media screen and (max-width:890px) {
-    .card-logo-list img {
+    .card-logo-list img, .form-offer-finalize.pay-form .card-logo-list img {
         width: 38px;
     }
     .card-logo-list{
@@ -2522,6 +2536,9 @@ p.foot-text{
     .pay-form h4{
         font-size: 12px;
         margin-bottom: 10px;
+    }
+    .btn-change-page{
+        margin:7px;
     }
 }
 .art-infos{

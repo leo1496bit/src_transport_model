@@ -13,7 +13,7 @@ let fieldset = document.querySelectorAll(".form-transport fieldset");
              formProgress.item(indCurrent+n).classList.add("active");
              document.querySelector(".form-progress-group").classList.remove("d-none");
              document.querySelector(".form-progress-group").classList.add("d-show");
-             formProgFinalize.classList.remove("d-show");
+             formProgFinalize.classList.remove("d-show");  
         }
         function changeToPay(n){
           change(n);
@@ -21,4 +21,7 @@ let fieldset = document.querySelectorAll(".form-transport fieldset");
           document.querySelector(".form-progress-group").classList.remove("d-show");
           document.querySelector(".form-progress-group").classList.add("d-none");
           formProgFinalize.classList.add("d-show");
+          let finalize = document.querySelector(".form-offer-finalize.pay-form");
+            let recap = document.querySelector(".recap-form");
+            recap.style.display = finalize.classList.contains("d-none")?'none':'block';
         }
